@@ -1,20 +1,20 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="es_MX" version="2.1">
 <context>
     <name>Preflet</name>
     <message>
         <location filename="../contents/Preflet.qml" line="37"/>
         <source>Devices</source>
-        <translation>Dispositivi</translation>
+        <translation>Dispositivos</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="48"/>
         <source>Power Saving</source>
-        <translation>Risparmio Energia</translation>
+        <translation>Ahorro de energía</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="51"/>
         <source>Blank screen</source>
-        <translation>Schermata vuota</translation>
+        <translation>Pantalla en blanco</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="56"/>
@@ -24,47 +24,47 @@
     <message>
         <location filename="../contents/Preflet.qml" line="57"/>
         <source>2 minutes</source>
-        <translation>2 minuti</translation>
+        <translation>2 minutos</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="58"/>
         <source>3 minutes</source>
-        <translation>3 minuti</translation>
+        <translation>3 minutos</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="59"/>
         <source>4 minutes</source>
-        <translation>4 minuti</translation>
+        <translation>4 minutos</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="60"/>
         <source>5 minutes</source>
-        <translation>5 minuti</translation>
+        <translation>5 minutos</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="61"/>
         <source>8 minutes</source>
-        <translation>8 minuti</translation>
+        <translation>8 minutos</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="62"/>
         <source>10 minutes</source>
-        <translation>10 minuti</translation>
+        <translation>10 minutos</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="63"/>
         <source>12 minutes</source>
-        <translation>12 minuti</translation>
+        <translation>12 minutos</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="64"/>
         <source>15 minutes</source>
-        <translation>15 minuti</translation>
+        <translation>15 minutos</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="65"/>
         <source>Never</source>
-        <translation>Mai</translation>
+        <translation>Nunca</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="71"/>
@@ -74,42 +74,42 @@
     <message>
         <location filename="../contents/Preflet.qml" line="72"/>
         <source>Turn off Wi-Fi to save power</source>
-        <translation>Spegnere Wi-Fi per risparmiare batteria</translation>
+        <translation>Apague el Wi-Fi para ahorrar energía</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="80"/>
         <source>Suspend &amp; Power Button</source>
-        <translation>Tasto di accensione/sospensione</translation>
+        <translation>Suspender y botón de encendido</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="83"/>
         <source>Automatic suspend</source>
-        <translation>Blocco automatico</translation>
+        <translation>Suspender automático</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="86"/>
         <source>Off</source>
-        <translation>Off</translation>
+        <translation>Apagar</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="92"/>
         <source>When the Power Button is pressed</source>
-        <translation>Quando il pulsante di accensione è premuto</translation>
+        <translation>Cuando se pulsa el botón de encendido</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="97"/>
         <source>Suspend</source>
-        <translation>Blocca</translation>
+        <translation>Suspender</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="98"/>
         <source>Hibernate</source>
-        <translation>Ibernazione</translation>
+        <translation>Hibernar</translation>
     </message>
     <message>
         <location filename="../contents/Preflet.qml" line="99"/>
         <source>Nothing</source>
-        <translation>Nulla</translation>
+        <translation>Nada</translation>
     </message>
 </context>
 </TS>
