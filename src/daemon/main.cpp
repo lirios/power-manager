@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
     // Setup application
     QCoreApplication app(argc, argv);
     app.setApplicationName(QStringLiteral("Power Manager"));
-    app.setApplicationVersion(QStringLiteral(LIRIWORKSPACE_VERSION));
+    app.setApplicationVersion(QStringLiteral(VERSION));
     app.setOrganizationDomain(QStringLiteral("liri.io"));
     app.setOrganizationName(QStringLiteral("Liri"));
 

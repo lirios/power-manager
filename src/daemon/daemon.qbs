@@ -1,8 +1,8 @@
 import qbs 1.0
 
 QtGuiApplication {
-    name: "liri-powermanager"
-    targetName: "liri-powermanager"
+    name: "liri-power-manager"
+    targetName: "liri-power-manager"
 
     Depends { name: "lirideployment" }
     Depends { name: "Qt"; submodules: ["core", "dbus"] }
@@ -12,7 +12,7 @@ QtGuiApplication {
     Depends { name: "KF5.Solid" }
 
     cpp.defines: [
-        'LIRIWORKSPACE_VERSION="' + project.version + '"',
+        'VERSION="' + project.version + '"',
         "QT_NO_CAST_FROM_ASCII",
         "QT_NO_CAST_TO_ASCII"
     ]
