@@ -27,7 +27,7 @@ import QtQuick.Controls 2.1
 import Fluid.Controls 1.0 as FluidControls
 
 Dialog {
-    readonly property bool __hasBatteries: hardwareEngine.batteries.length > 0
+    readonly property bool __hasBatteries: batteriesModel.count > 0
 
     parent: window.contentItem
 

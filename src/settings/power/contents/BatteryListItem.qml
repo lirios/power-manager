@@ -25,10 +25,10 @@ import QtQuick 2.1
 import QtQuick.Layouts 1.0
 import QtQuick.Controls 2.0
 import Fluid.Controls 1.0
-import Vibe.Hardware 1.0
+import Liri.Power 1.0
 
 ListItem {
-    property var battery
+    property Battery battery
 
     text: battery.product
     valueText: battery.chargePercent + "%"

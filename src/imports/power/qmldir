@@ -1,0 +1,4 @@
+module Liri.Power
+plugin powerplugin
+classname PowerPlugin
+typeinfo plugins.qmltypes

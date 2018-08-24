@@ -28,6 +28,8 @@ The following modules and their dependencies are required:
  * [qbs-shared](https://github.com/lirios/qbs-shared.git) >= 1.2.0
  * [fluid](https://github.com/lirios/fluid) >= 1.0.0
  * [qtgsettings](https://github.com/lirios/qtgsettings) >= 1.1.0
+ * [libliri](https://github.com/lirios/libliri.git)
+ * [solid](http://quickgit.kde.org/?p=solid.git)
 
 ## Installation
 

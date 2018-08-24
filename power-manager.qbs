@@ -16,6 +16,7 @@ Project {
     references: [
         "data/settings/settings.qbs",
         "src/daemon/daemon.qbs",
+        "src/imports/power/power.qbs",
         "src/settings/power/power.qbs",
     ]
 }

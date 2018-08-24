@@ -27,7 +27,7 @@ import QtQuick.Controls 2.0
 import QtQuick.Controls.Material 2.0
 import Fluid.Controls 1.0 as FluidControls
 import Liri.Settings 1.0
-import Vibe.Hardware 1.0
+import Liri.Power 1.0
 import QtGSettings 1.0
 
 PrefletPage {
@@ -45,8 +45,8 @@ PrefletPage {
         schema.path: "/io/liri/hardware/power/"
     }
 
-    HardwareEngine {
-        id: hardwareEngine
+    BatteriesModel {
+        id: batteriesModel
     }
 
     AutomaticSuspendDialog {
@@ -59,8 +59,8 @@ PrefletPage {
 
         Repeater {
             id: repeater
-            model: hardwareEngine.batteries
-            delegate: BatteryListItem { battery: modelData }
+            model: batteriesModel
+            delegate: BatteryListItem { battery: model.battery }
         }
     }
 
@@ -76,7 +76,7 @@ PrefletPage {
                 to: 100
                 value: 50
             }
-            visible: false // hardwareEngine.batteries.length > 0
+            visible: false
         }
 
         FluidControls.ListItem {
@@ -88,7 +88,7 @@ PrefletPage {
                 to: 100
                 value: 50
             }
-            visible: false // hardwareEngine.batteries.length > 0
+            visible: false
         }
 
         FluidControls.ListItem {
@@ -98,7 +98,7 @@ PrefletPage {
                 checked: powerSettings.idleDim
                 onCheckedChanged: powerSettings.idleDim = checked
             }
-            visible: hardwareEngine.batteries.length > 0
+            visible: batteriesModel.count > 0
         }
 
         FluidControls.ListItem {
@@ -181,7 +181,7 @@ PrefletPage {
                     var batteryOn = powerSettings.sleepInactiveBatteryType === "suspend";
                     var acOn = powerSettings.sleepInactiveAcType === "suspend";
 
-                    if (hardwareEngine.batteries.length > 0) {
+                    if (batteriesModel.count > 0) {
                         if (batteryOn && acOn)
                             return qsTr("On");
                         else if (batteryOn)
