@@ -30,7 +30,7 @@ import Liri.Power 1.0
 ListItem {
     property Battery battery
 
-    text: battery.product
+    text: battery.summary
     valueText: battery.chargePercent + "%"
 
     secondaryItem: ProgressBar {
