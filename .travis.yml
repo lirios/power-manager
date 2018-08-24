@@ -1,0 +1,27 @@
+language: c
+
+compiler:
+  - clang
+  - gcc
+
+sudo: required
+
+services:
+  - docker
+
+env:
+  global:
+    # DEPLOY_HOST
+    - secure: "Ut47d171aBuT8ufYHLr8gxGkTrP1qihY6BMiz5KG3d2EhiPcuWFllFj7t0DoUlhMq705wBWWVn3M/89xhAQVedLUKp+ClDTaTEFW2ZDmfq6AqZTpKFBSRMKlR5sa/nG1ujhIzLAh3YMo18b//ZYbJIWWY7Q0ZegKXlzkTmEkGWd5BOZjwHmypx1+eKGNq9MSeSA+dNO4OxJvM/aiAeYRgTXKwsaf9fMz0f9hJAZfBU7fkvXbuWO71VuGQLWwQ/kR2dqrmyAUZIendb7BhudODSYfA/CribLHfrXtofLciu7fPOqzUzdiqKEf5gBRszt7jfxKocZKZ3u+ajx58Ei9j37cU1fHqt6maQaZa6pTr+MOTSbbtDRhy5KU+N1TaQ7stSowP/naX+42vsld5PMgiBR3mlphLNTr+5WHxR+uodcKIyFM+TOIjWLY7F2h5XA5bXDpyddOGqycZ9eG81w0lpEwRZS6ShhrDCu9h8xEDi4IqEXjFWVZ9ASNAmkiv6xHosZF2Mg305VqcTUkmNqqEXCIxXjCOW2VJU/cxJUDm42KjS+NqefPV2pMd84N6gd7bu6YJ7XJlqhkVS5s79TEeucyTvTnZ1tAHsba0TL06T8i4A2XIMMSA4yismHo6B4LlK3W3Xktj0aI8TepoP3tc5jxdpyCWF9lPn6FTUhNbbg="
+
+branches:
+  except:
+    - /^(?i:continuous)$/
+
+script:
+  - wget -c https://raw.githubusercontent.com/lirios/infra-travis/master/run
+  - bash run ./.travis/build.sh
+
+notifications:
+  email: false
+  slack: lirios:fdUqVmPzqPskEL1UBhqapZ0w
