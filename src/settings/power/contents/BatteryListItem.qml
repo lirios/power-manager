@@ -31,7 +31,7 @@ ListItem {
     property Battery battery
 
     text: battery.summary
-    valueText: battery.chargePercent + "%"
+    valueText: qsTr("%1%").arg(battery.chargePercent)
 
     secondaryItem: ProgressBar {
         anchors {
