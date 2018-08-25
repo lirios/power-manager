@@ -21,29 +21,10 @@
  * $END_LICENSE$
  ***************************************************************************/
 
-#include <QCoreApplication>
-#include <QDBusConnection>
+#ifndef TRANSLATION_H
+#define TRANSLATION_H
 
-#include "translation.h"
+void loadQtTranslations();
+void loadDaemonTranslations();
 
-int main(int argc, char *argv[])
-{
-    // Setup application
-    QCoreApplication app(argc, argv);
-    app.setApplicationName(QStringLiteral("Power Manager"));
-    app.setApplicationVersion(QStringLiteral(VERSION));
-    app.setOrganizationDomain(QStringLiteral("liri.io"));
-    app.setOrganizationName(QStringLiteral("Liri"));
-
-    // Register
-    if (!QDBusConnection::sessionBus().registerService(QStringLiteral("io.liri.PowerManager"))) {
-        qWarning("Unable to register D-Bus service");
-        return 1;
-    }
-
-    // Load translations
-    loadQtTranslations();
-    loadDaemonTranslations();
-
-    return app.exec();
-}
+#endif // TRANSLATION_H

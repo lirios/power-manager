@@ -1,0 +1,38 @@
+[main]
+host = https://www.transifex.com
+
+[liri-power-manager.daemon]
+type = QT
+source_lang = en
+source_file = src/daemon/translations/liri-power-manager.ts
+file_filter = src/daemon/translations/liri-power-manager_<lang>.ts
+
+[liri-power-manager.desktop-file]
+type = DESKTOP
+source_lang = en
+source_file = src/daemon/io.liri.PowerManager.desktop.in
+file_filter = src/daemon/translations/io.liri.PowerManager_<lang>.desktop
+
+[liri-power-manager.indicator]
+type = QT
+source_lang = en
+source_file = src/indicators/power/translations/power.ts
+file_filter = src/indicators/power/translations/power_<lang>.ts
+
+[liri-power-manager.indicator-metadata]
+type = DESKTOP
+source_lang = en
+source_file = src/indicators/power/metadata.desktop.in
+file_filter = src/indicators/power/translations/metadata_<lang>.desktop
+
+[liri-power-manager.settings-module]
+type = QT
+source_lang = en
+source_file = src/settings/power/translations/power.ts
+file_filter = src/settings/power/translations/power_<lang>.ts
+
+[liri-power-manager.settings-module-metadata]
+type = DESKTOP
+source_lang = en
+source_file = src/settings/power/metadata.desktop.in
+file_filter = src/settings/power/translations/metadata_<lang>.desktop

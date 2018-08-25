@@ -10,6 +10,7 @@ QtGuiApplication {
     Depends { name: "LiriCore" }
     Depends { name: "LiriNotifications" }
     Depends { name: "KF5.Solid" }
+    Depends { name: "LiriTranslations" }
 
     cpp.defines: [
         'VERSION="' + project.version + '"',
@@ -25,14 +26,27 @@ QtGuiApplication {
         "main.cpp",
         "powermanager.cpp",
         "powermanager.h",
+        "translation.cpp",
+        "translation.h",
     ]
 
     Group {
         name: "Desktop File"
-        files: ["*.desktop"]
-        qbs.install: true
-        qbs.installDir: lirideployment.etcDir + "/xdg/autostart"
-        qbs.installPrefix: ""
+        files: ["io.liri.PowerManager.desktop.in"]
+        fileTags: ["liri.desktop.template"]
+    }
+
+    Group {
+        name: "Desktop File Translations"
+        files: ["io.liri.PowerManager_*.desktop"]
+        prefix: "translations/"
+        fileTags: ["liri.desktop.translations"]
+    }
+
+    Group {
+        name: "Translations"
+        files: ["*_*.ts"]
+        prefix: "translations/"
     }
 
     Group {
@@ -40,4 +54,18 @@ QtGuiApplication {
         qbs.installDir: lirideployment.binDir
         fileTagsFilter: product.type
     }
+
+    Group {
+        qbs.install: true
+        qbs.installDir: lirideployment.etcDir + "/xdg/autostart"
+        qbs.installPrefix: ""
+        fileTagsFilter: "liri.desktop.file"
+    }
+
+    Group {
+        qbs.install: true
+        qbs.installDir: lirideployment.dataDir + "/liri-power-manager/translations"
+        fileTagsFilter: "qm"
+    }
+
 }
