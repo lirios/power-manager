@@ -2,8 +2,8 @@
 Type=Application
 Name=Power Manager
 Comment=Power Manager
-Exec=liri-powermanager
-TryExec=liri-powermanager
+Exec=liri-power-manager
+TryExec=liri-power-manager
 Terminal=false
 StartupNotify=false
 OnlyShowIn=X-Liri;
