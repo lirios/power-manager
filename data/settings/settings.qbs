@@ -8,7 +8,7 @@ Product {
     Group {
         name: "Schemas"
         files: [
-            "io.liri.hardware.enums.xml",
+            "io.liri.hardware.power.enums.xml",
             "io.liri.hardware.power.gschema.xml",
         ]
         qbs.install: true
