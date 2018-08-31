@@ -11,6 +11,5 @@ X-Liri-Settings-SymbolicIcon=notification/power
 
 
 # Translations
-Comment[da]=Vis din batteristatus og skift strømstyringsindstillinger
+Comment[da]=Vis din batteristatus og skift indstillinger for strømbesparelse
 Name[da]=Strøm
-Icon[da]=preferences-system-power-management

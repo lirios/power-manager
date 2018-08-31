@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Name=Power Manager
+Comment=Power Manager
+#TRANSLATIONS
+Exec=liri-power-manager
+TryExec=liri-power-manager
+Terminal=false
+StartupNotify=false
+OnlyShowIn=X-Liri;
+NoDisplay=true
+
+
+# Translations
+Comment[it]=Gestore della batteria e del risparmio energetico
+Name[it]=Power Manager
