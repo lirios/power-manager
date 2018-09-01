@@ -52,7 +52,8 @@ BatteriesModel::BatteriesModel(QObject *parent)
         if (battery) {
             Battery *primary = primaryBattery();
 
-            beginRemoveRows(QModelIndex(), m_batteries.size(), m_batteries.size());
+            int index = m_batteries.indexOf(battery);
+            beginRemoveRows(QModelIndex(), index, index);
             m_batteries.removeOne(battery);
             m_batteriesMap.remove(udi);
             battery->deleteLater();
