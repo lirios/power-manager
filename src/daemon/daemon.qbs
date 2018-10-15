@@ -67,5 +67,4 @@ QtGuiApplication {
         qbs.installDir: lirideployment.dataDir + "/liri-power-manager/translations"
         fileTagsFilter: "qm"
     }
-
 }
