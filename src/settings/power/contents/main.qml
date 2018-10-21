@@ -30,7 +30,7 @@ import Liri.Settings 1.0
 import Liri.Power 1.0
 import QtGSettings 1.0
 
-PrefletPage {
+ModulePage {
     GSettings {
         id: sessionSettings
 
