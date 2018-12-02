@@ -31,6 +31,8 @@ liri_add_executable(LiriPowerManager
         VERSION="${PROJECT_VERSION}"
     DESKTOP
         "${_desktop_file}"
+    DESKTOP_INSTALL_DIRECTORY
+        "${INSTALL_SYSCONFDIR}/xdg/autostart"
     LIBRARIES
         Qt5::DBus
         Liri::Qt5GSettings
