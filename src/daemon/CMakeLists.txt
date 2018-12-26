@@ -10,6 +10,12 @@ if(NOT TARGET Liri::Notifications)
     find_package(Liri1Notifications REQUIRED)
 endif()
 
+# Translations
+file(GLOB LiriPowerManager_TRANSLATIONS "${CMAKE_CURRENT_SOURCE_DIR}/translations/*_*.ts")
+qt5_add_translation(LiriPowerManager_QM_FILES ${LiriPowerManager_TRANSLATIONS})
+install(FILES ${LiriPowerManager_QM_FILES}
+        DESTINATION "${INSTALL_DATADIR}/liri-power-manager/translations")
+
 liri_translate_desktop(_desktop_file SOURCES "io.liri.PowerManager.desktop.in")
 
 liri_add_executable(LiriPowerManager
@@ -25,6 +31,7 @@ liri_add_executable(LiriPowerManager
         powermanager.h
         translation.cpp
         translation.h
+        ${LiriPowerManager_QM_FILES}
     DEFINES
         QT_NO_CAST_FROM_ASCII
         QT_NO_FOREACH
