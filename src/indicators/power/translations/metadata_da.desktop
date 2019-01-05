@@ -18,5 +18,6 @@ X-Liri-PluginInfo-EnabledByDefault=true
 
 
 # Translations
-Comment[da]=Batteristatus
+Icon[da]=preferences-system-power-management
 Name[da]=Strøm
+Comment[da]=Batteristatus

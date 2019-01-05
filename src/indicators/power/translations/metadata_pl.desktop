@@ -18,6 +18,6 @@ X-Liri-PluginInfo-EnabledByDefault=true
 
 
 # Translations
-Icon[tr]=preferences-system-power-management
-Name[tr]=Güç
-Comment[tr]=Pil durumu
+Icon[pl]=preferences-system-power-management
+Name[pl]=Zasilanie
+Comment[pl]=Stan Baterii

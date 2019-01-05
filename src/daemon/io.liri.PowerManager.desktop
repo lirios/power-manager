@@ -1,0 +1,26 @@
+[Desktop Entry]
+Comment=Power Manager
+Comment[da]=Strømstyring
+Comment[fr]=Gestionnaire d'énergie
+Comment[it]=Gestore della batteria e del risparmio energetico
+Comment[lt]=Maitinimo tvarkytuvė
+Comment[pl]=Menedżer Zasilania
+Comment[pt_BR]=Gerenciador de energia
+Comment[ru]=Управление питанием
+Comment[tr]=Güç Yöneticisi
+Exec=liri-power-manager
+Name=Power Manager
+Name[da]=Strømstyring
+Name[fr]=Gestionnaire d'énergie
+Name[it]=Power Manager
+Name[lt]=Maitinimo tvarkytuvė
+Name[pl]=Menedżer Zasilania
+Name[pt_BR]=Gerenciador de energia
+Name[ru]=Управление питанием
+Name[tr]=Güç Yöneticisi
+NoDisplay=true
+OnlyShowIn=X-Liri;
+StartupNotify=false
+Terminal=false
+TryExec=liri-power-manager
+Type=Application
