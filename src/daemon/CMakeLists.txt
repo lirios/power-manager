@@ -16,8 +16,6 @@ qt5_add_translation(LiriPowerManager_QM_FILES ${LiriPowerManager_TRANSLATIONS})
 install(FILES ${LiriPowerManager_QM_FILES}
         DESTINATION "${INSTALL_DATADIR}/liri-power-manager/translations")
 
-liri_translate_desktop(_desktop_file SOURCES "io.liri.PowerManager.desktop.in")
-
 liri_add_executable(LiriPowerManager
     OUTPUT_NAME
         "liri-power-manager"
@@ -37,7 +35,7 @@ liri_add_executable(LiriPowerManager
         QT_NO_FOREACH
         VERSION="${PROJECT_VERSION}"
     DESKTOP
-        "${_desktop_file}"
+        "${CMAKE_CURRENT_SOURCE_DIR}/io.liri.PowerManager.desktop"
     DESKTOP_INSTALL_DIRECTORY
         "${INSTALL_SYSCONFDIR}/xdg/autostart"
     LIBRARIES
