@@ -7,6 +7,8 @@ endif()
 liri_add_qml_plugin(power
     MODULE_PATH
         "Liri/Power"
+    VERSION
+        "1.0"
     SOURCES
         batteriesmodel.cpp
         batteriesmodel.h
@@ -15,7 +17,6 @@ liri_add_qml_plugin(power
         plugin.cpp
     QML_FILES
         qmldir
-        plugins.qmltypes
     DEFINES
         QT_NO_CAST_FROM_ASCII
         QT_NO_FOREACH
