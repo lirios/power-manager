@@ -4,6 +4,7 @@ host = https://www.transifex.com
 [liri-power-manager.daemon]
 type = QT
 source_lang = en
+liri_source_directory = src/daemon
 source_file = src/daemon/translations/liri-power-manager.ts
 file_filter = src/daemon/translations/liri-power-manager_<lang>.ts
 
@@ -11,11 +12,13 @@ file_filter = src/daemon/translations/liri-power-manager_<lang>.ts
 type = DESKTOP
 source_lang = en
 source_file = src/daemon/io.liri.PowerManager.desktop.in
+liri_dest_file = src/daemon/io.liri.PowerManager.desktop
 file_filter = src/daemon/translations/io.liri.PowerManager_<lang>.desktop
 
 [liri-power-manager.indicator]
 type = QT
 source_lang = en
+liri_source_directory = src/indicators/power/contents
 source_file = src/indicators/power/translations/power.ts
 file_filter = src/indicators/power/translations/power_<lang>.ts
 
@@ -23,11 +26,13 @@ file_filter = src/indicators/power/translations/power_<lang>.ts
 type = DESKTOP
 source_lang = en
 source_file = src/indicators/power/metadata.desktop.in
+liri_dest_file = src/indicators/power/metadata.desktop
 file_filter = src/indicators/power/translations/metadata_<lang>.desktop
 
 [liri-power-manager.settings-module]
 type = QT
 source_lang = en
+liri_source_directory = src/settings/power/contents
 source_file = src/settings/power/translations/power.ts
 file_filter = src/settings/power/translations/power_<lang>.ts
 
@@ -35,4 +40,5 @@ file_filter = src/settings/power/translations/power_<lang>.ts
 type = DESKTOP
 source_lang = en
 source_file = src/settings/power/metadata.desktop.in
+liri_dest_file = src/settings/power/metadata.desktop
 file_filter = src/settings/power/translations/metadata_<lang>.desktop
