@@ -29,8 +29,12 @@ import Liri.Power 1.0
 
 Indicator {
     title: qsTr("Power")
-    iconSource: batteriesModel.primaryBattery ? FluidControls.Utils.iconUrl(batteriesModel.primaryBattery.chargeIconName)
-                                              : FluidControls.Utils.iconUrl("device/battery_unknown")
+    iconSource: {
+        var iconName = batteriesModel.primaryBattery ? batteriesModel.primaryBattery.chargeIconName : "";
+        if (!iconName)
+            iconName = "device/battery_unknown";
+        return FluidControls.Utils.iconUrl(iconName);
+    }
     tooltip: batteriesModel.primaryBattery ? batteriesModel.primaryBattery.summary : ""
     visible: batteriesModel.count > 0
     component: ListView {
