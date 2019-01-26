@@ -48,7 +48,10 @@ BatteriesModel::BatteriesModel(QObject *parent)
         }
     });
     connect(notifier, &Solid::DeviceNotifier::deviceRemoved, [this](const QString &udi) {
-        Battery *battery = m_batteriesMap.value(udi, nullptr);
+        if (!m_batteriesMap.contains(udi))
+            return;
+
+        Battery *battery = m_batteriesMap[udi];
         if (battery) {
             Battery *primary = primaryBattery();
 
