@@ -23,8 +23,8 @@
 
 import QtQuick 2.1
 import QtQuick.Layouts 1.0
-import QtQuick.Controls 2.0
-import QtQuick.Controls.Material 2.0
+import QtQuick.Controls 2.2
+import QtQuick.Controls.Material 2.2
 import Fluid.Controls 1.0 as FluidControls
 import Liri.Settings 1.0
 import Liri.Power 1.0
@@ -53,177 +53,186 @@ ModulePage {
         id: automaticSuspendDialog
     }
 
-    ModuleContainer {
-        title: qsTr("Devices")
-        visible: repeater.count > 0
+    ScrollView {
+        anchors.fill: parent
+        clip: true
 
-        Repeater {
-            id: repeater
-            model: batteriesModel
-            delegate: BatteryListItem { battery: model.battery }
-        }
-    }
+        Column {
+            width: Math.max(implicitWidth, parent.width)
 
-    ModuleContainer {
-        title: qsTr("Power Saving")
+            ModuleContainer {
+                title: qsTr("Devices")
+                visible: repeater.count > 0
 
-        FluidControls.ListItem {
-            text: qsTr("Screen brightness")
-            secondaryItem: Slider {
-                anchors.verticalCenter: parent.verticalCenter
-                width: parent.width
-                from: 0
-                to: 100
-                value: 50
-            }
-            visible: false
-        }
-
-        FluidControls.ListItem {
-            text: qsTr("Keyboard brightness")
-            secondaryItem: Slider {
-                anchors.verticalCenter: parent.verticalCenter
-                width: parent.width
-                from: 0
-                to: 100
-                value: 50
-            }
-            visible: false
-        }
-
-        FluidControls.ListItem {
-            text: qsTr("Dim screen when inactive")
-            rightItem: Switch {
-                anchors.centerIn: parent
-                checked: powerSettings.idleDim
-                onCheckedChanged: powerSettings.idleDim = checked
-            }
-            visible: batteriesModel.count > 0
-        }
-
-        FluidControls.ListItem {
-            text: qsTr("Blank screen")
-            rightItem: ComboBox {
-                anchors.centerIn: parent
-                width: FluidControls.Units.gu(6)
-                textRole: "text"
-                model: ListModel {
-                    ListElement { text: QT_TR_NOOP("1 minute"); value: 60 }
-                    ListElement { text: QT_TR_NOOP("2 minutes"); value: 120 }
-                    ListElement { text: QT_TR_NOOP("3 minutes"); value: 180 }
-                    ListElement { text: QT_TR_NOOP("4 minutes"); value: 240 }
-                    ListElement { text: QT_TR_NOOP("5 minutes"); value: 300 }
-                    ListElement { text: QT_TR_NOOP("8 minutes"); value: 480 }
-                    ListElement { text: QT_TR_NOOP("10 minutes"); value: 600 }
-                    ListElement { text: QT_TR_NOOP("12 minutes"); value: 720 }
-                    ListElement { text: QT_TR_NOOP("15 minutes"); value: 900 }
-                    ListElement { text: QT_TR_NOOP("Never"); value: 0 }
+                Repeater {
+                    id: repeater
+                    model: batteriesModel
+                    delegate: BatteryListItem { battery: model.battery }
                 }
-                currentIndex: {
-                    switch (sessionSettings.idleDelay) {
-                    case 60:
-                        return 0;
-                    case 120:
-                        return 1;
-                    case 180:
-                        return 2;
-                    case 240:
-                        return 3;
-                    case 300:
-                        return 4;
-                    case 480:
-                        return 5;
-                    case 600:
-                        return 6;
-                    case 720:
-                        return 7;
-                    case 900:
-                        return 8;
+            }
+
+            ModuleContainer {
+                title: qsTr("Power Saving")
+
+                FluidControls.ListItem {
+                    text: qsTr("Screen brightness")
+                    secondaryItem: Slider {
+                        anchors.verticalCenter: parent.verticalCenter
+                        width: parent.width
+                        from: 0
+                        to: 100
+                        value: 50
                     }
-
-                    return 9;
+                    visible: false
                 }
-                onActivated: {
-                    sessionSettings.idleDelay = model.get(index).value;
-                }
-            }
-        }
 
-        FluidControls.ListItem {
-            text: qsTr("Wi-Fi")
-            subText: qsTr("Turn off Wi-Fi to save power")
-            rightItem: Switch {
-                anchors.centerIn: parent
-                checked: true
-            }
-            visible: false
-        }
-
-        FluidControls.ListItem {
-            text: qsTr("Bluetooth")
-            subText: qsTr("Turn off Bluetooth to save power")
-            rightItem: Switch {
-                anchors.centerIn: parent
-                checked: true
-            }
-            visible: false
-        }
-    }
-
-    ModuleContainer {
-        title: qsTr("Suspend & Power Button")
-
-        FluidControls.ListItem {
-            text: qsTr("Automatic suspend")
-            rightItem: FluidControls.BodyLabel {
-                anchors.centerIn: parent
-                text: {
-                    var batteryOn = powerSettings.sleepInactiveBatteryType === "suspend";
-                    var acOn = powerSettings.sleepInactiveAcType === "suspend";
-
-                    if (batteriesModel.count > 0) {
-                        if (batteryOn && acOn)
-                            return qsTr("On");
-                        else if (batteryOn)
-                            return qsTr("When on battery power");
-                        else if (acOn)
-                            return qsTr("When plugged in");
-                    } else if (acOn) {
-                        return qsTr("On");
+                FluidControls.ListItem {
+                    text: qsTr("Keyboard brightness")
+                    secondaryItem: Slider {
+                        anchors.verticalCenter: parent.verticalCenter
+                        width: parent.width
+                        from: 0
+                        to: 100
+                        value: 50
                     }
-
-                    return qsTr("Off");
+                    visible: false
                 }
-                color: Material.secondaryTextColor
-            }
-            onClicked: automaticSuspendDialog.open()
-        }
 
-        FluidControls.ListItem {
-            text: qsTr("When the Power Button is pressed")
-            rightItem: ComboBox {
-                anchors.centerIn: parent
-                textRole: "text"
-                model: ListModel {
-                    ListElement { text: QT_TR_NOOP("Ask"); value: "interactive" }
-                    ListElement { text: QT_TR_NOOP("Suspend"); value: "suspend" }
-                    ListElement { text: QT_TR_NOOP("Hibernate"); value: "hibernate" }
-                    ListElement { text: QT_TR_NOOP("Nothing"); value: "nothing" }
-                }
-                currentIndex: {
-                    switch (powerSettings.powerButtonAction) {
-                    case "interactive":
-                        return 0;
-                    case "suspend":
-                        return 1;
-                    case "hibernate":
-                        return 2;
+                FluidControls.ListItem {
+                    text: qsTr("Dim screen when inactive")
+                    rightItem: Switch {
+                        anchors.centerIn: parent
+                        checked: powerSettings.idleDim
+                        onCheckedChanged: powerSettings.idleDim = checked
                     }
-
-                    return 3;
+                    visible: batteriesModel.count > 0
                 }
-                onActivated: {
-                    powerSettings.powerButtonAction = model.get(index).value;
+
+                FluidControls.ListItem {
+                    text: qsTr("Blank screen")
+                    rightItem: ComboBox {
+                        anchors.centerIn: parent
+                        width: FluidControls.Units.gu(6)
+                        textRole: "text"
+                        model: ListModel {
+                            ListElement { text: QT_TR_NOOP("1 minute"); value: 60 }
+                            ListElement { text: QT_TR_NOOP("2 minutes"); value: 120 }
+                            ListElement { text: QT_TR_NOOP("3 minutes"); value: 180 }
+                            ListElement { text: QT_TR_NOOP("4 minutes"); value: 240 }
+                            ListElement { text: QT_TR_NOOP("5 minutes"); value: 300 }
+                            ListElement { text: QT_TR_NOOP("8 minutes"); value: 480 }
+                            ListElement { text: QT_TR_NOOP("10 minutes"); value: 600 }
+                            ListElement { text: QT_TR_NOOP("12 minutes"); value: 720 }
+                            ListElement { text: QT_TR_NOOP("15 minutes"); value: 900 }
+                            ListElement { text: QT_TR_NOOP("Never"); value: 0 }
+                        }
+                        currentIndex: {
+                            switch (sessionSettings.idleDelay) {
+                            case 60:
+                                return 0;
+                            case 120:
+                                return 1;
+                            case 180:
+                                return 2;
+                            case 240:
+                                return 3;
+                            case 300:
+                                return 4;
+                            case 480:
+                                return 5;
+                            case 600:
+                                return 6;
+                            case 720:
+                                return 7;
+                            case 900:
+                                return 8;
+                            }
+
+                            return 9;
+                        }
+                        onActivated: {
+                            sessionSettings.idleDelay = model.get(index).value;
+                        }
+                    }
+                }
+
+                FluidControls.ListItem {
+                    text: qsTr("Wi-Fi")
+                    subText: qsTr("Turn off Wi-Fi to save power")
+                    rightItem: Switch {
+                        anchors.centerIn: parent
+                        checked: true
+                    }
+                    visible: false
+                }
+
+                FluidControls.ListItem {
+                    text: qsTr("Bluetooth")
+                    subText: qsTr("Turn off Bluetooth to save power")
+                    rightItem: Switch {
+                        anchors.centerIn: parent
+                        checked: true
+                    }
+                    visible: false
+                }
+            }
+
+            ModuleContainer {
+                title: qsTr("Suspend & Power Button")
+
+                FluidControls.ListItem {
+                    text: qsTr("Automatic suspend")
+                    rightItem: FluidControls.BodyLabel {
+                        anchors.centerIn: parent
+                        text: {
+                            var batteryOn = powerSettings.sleepInactiveBatteryType === "suspend";
+                            var acOn = powerSettings.sleepInactiveAcType === "suspend";
+
+                            if (batteriesModel.count > 0) {
+                                if (batteryOn && acOn)
+                                    return qsTr("On");
+                                else if (batteryOn)
+                                    return qsTr("When on battery power");
+                                else if (acOn)
+                                    return qsTr("When plugged in");
+                            } else if (acOn) {
+                                return qsTr("On");
+                            }
+
+                            return qsTr("Off");
+                        }
+                        color: Material.secondaryTextColor
+                    }
+                    onClicked: automaticSuspendDialog.open()
+                }
+
+                FluidControls.ListItem {
+                    text: qsTr("When the Power Button is pressed")
+                    rightItem: ComboBox {
+                        anchors.centerIn: parent
+                        textRole: "text"
+                        model: ListModel {
+                            ListElement { text: QT_TR_NOOP("Ask"); value: "interactive" }
+                            ListElement { text: QT_TR_NOOP("Suspend"); value: "suspend" }
+                            ListElement { text: QT_TR_NOOP("Hibernate"); value: "hibernate" }
+                            ListElement { text: QT_TR_NOOP("Nothing"); value: "nothing" }
+                        }
+                        currentIndex: {
+                            switch (powerSettings.powerButtonAction) {
+                            case "interactive":
+                                return 0;
+                            case "suspend":
+                                return 1;
+                            case "hibernate":
+                                return 2;
+                            }
+
+                            return 3;
+                        }
+                        onActivated: {
+                            powerSettings.powerButtonAction = model.get(index).value;
+                        }
+                    }
                 }
             }
         }
