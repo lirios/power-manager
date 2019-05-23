@@ -31,11 +31,13 @@ class PowerManager : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(PowerActionType lidClosedAction READ lidClosedAction NOTIFY lidClosedActionChanged)
+    Q_PROPERTY(PowerActionType powerButtonAction READ powerButtonAction NOTIFY powerButtonActionChanged)
     Q_PROPERTY(int sleepInactiveAcTimeout READ sleepInactiveAcTimeout NOTIFY sleepInactiveAcTimeoutChanged)
     Q_PROPERTY(int sleepInactiveBatteryTimeout READ sleepInactiveBatteryTimeout NOTIFY sleepInactiveBatteryTimeoutChanged)
 public:
     enum PowerActionType {
         Nothing,
+        Interactive,
         Suspend,
         Hibernate,
         HybridSleep
@@ -45,12 +47,17 @@ public:
     explicit PowerManager(QObject *parent = nullptr);
 
     PowerActionType lidClosedAction() const;
+    PowerActionType powerButtonAction() const;
 
     int sleepInactiveAcTimeout() const;
+    PowerActionType sleepInactiveAcAction() const;
+
     int sleepInactiveBatteryTimeout() const;
+    PowerActionType sleepInactiveBatteryAction() const;
 
 Q_SIGNALS:
     void lidClosedActionChanged();
+    void powerButtonActionChanged();
     void sleepInactiveAcTimeoutChanged();
     void sleepInactiveAcTypeChanged();
     void sleepInactiveBatteryTimeoutChanged();
@@ -59,6 +66,7 @@ Q_SIGNALS:
 private:
     QtGSettings::QGSettings *m_settings = nullptr;
     PowerActionType m_lidClosedAction = Nothing;
+    PowerActionType m_powerButtonAction = Nothing;
     int m_sleepAcTimeout = 0;
     PowerActionType m_sleepAcAction = Nothing;
     int m_sleepBatteryTimeout = 0;

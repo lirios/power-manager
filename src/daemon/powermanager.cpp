@@ -33,6 +33,7 @@ PowerManager::PowerManager(QObject *parent)
                                              QStringLiteral("/io/liri/hardware/power/"),
                                              this);
     m_lidClosedAction = convertPowerAction(m_settings->value(QStringLiteral("lid-closed-type")).toString());
+    m_powerButtonAction = convertPowerAction(m_settings->value(QStringLiteral("power-button-action")).toString());
     m_sleepAcTimeout = m_settings->value(QStringLiteral("sleep-inactive-ac-timeout")).toInt();
     m_sleepAcAction = convertPowerAction(m_settings->value(QStringLiteral("sleep-inactive-ac-type")).toString());
     m_sleepBatteryTimeout = m_settings->value(QStringLiteral("sleep-inactive-battery-timeout")).toInt();
@@ -49,9 +50,19 @@ PowerManager::PowerActionType PowerManager::lidClosedAction() const
     return m_lidClosedAction;
 }
 
+PowerManager::PowerActionType PowerManager::powerButtonAction() const
+{
+    return m_powerButtonAction;
+}
+
 int PowerManager::sleepInactiveAcTimeout() const
 {
     return m_sleepAcTimeout;
+}
+
+PowerManager::PowerActionType PowerManager::sleepInactiveAcAction() const
+{
+    return m_sleepAcAction;
 }
 
 int PowerManager::sleepInactiveBatteryTimeout() const
@@ -59,9 +70,16 @@ int PowerManager::sleepInactiveBatteryTimeout() const
     return m_sleepBatteryTimeout;
 }
 
+PowerManager::PowerActionType PowerManager::sleepInactiveBatteryAction() const
+{
+    return m_sleepBatteryAction;
+}
+
 PowerManager::PowerActionType PowerManager::convertPowerAction(const QString &action)
 {
-    if (action == QStringLiteral("suspend"))
+    if (action == QStringLiteral("interactive"))
+        return Interactive;
+    else if (action == QStringLiteral("suspend"))
         return Suspend;
     else if (action == QStringLiteral("hibernate"))
         return Hibernate;
@@ -75,6 +93,9 @@ void PowerManager::settingChanged(const QString &key)
     if (key == QStringLiteral("lid-closed-type")) {
         m_lidClosedAction = convertPowerAction(m_settings->value(key).toString());
         Q_EMIT lidClosedActionChanged();
+    } else if (key == QStringLiteral("power-button-action")) {
+        m_lidClosedAction = convertPowerAction(m_settings->value(key).toString());
+        Q_EMIT powerButtonActionChanged();
     } else if (key == QStringLiteral("sleep-inactive-ac-timeout")) {
         m_sleepAcTimeout = m_settings->value(key).toInt();
         Q_EMIT sleepInactiveAcTimeoutChanged();
