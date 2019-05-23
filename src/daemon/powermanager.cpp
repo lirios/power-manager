@@ -34,9 +34,9 @@ PowerManager::PowerManager(QObject *parent)
                                              this);
     m_lidClosedAction = convertPowerAction(m_settings->value(QStringLiteral("lid-closed-type")).toString());
     m_sleepAcTimeout = m_settings->value(QStringLiteral("sleep-inactive-ac-timeout")).toInt();
-    m_sleepAcAction = m_settings->value(QStringLiteral("sleep-inactive-ac-type")).toString();
+    m_sleepAcAction = convertPowerAction(m_settings->value(QStringLiteral("sleep-inactive-ac-type")).toString());
     m_sleepBatteryTimeout = m_settings->value(QStringLiteral("sleep-inactive-battery-timeout")).toInt();
-    m_sleepBatteryAction = m_settings->value(QStringLiteral("sleep-inactive-battery-type")).toString();
+    m_sleepBatteryAction = convertPowerAction(m_settings->value(QStringLiteral("sleep-inactive-battery-type")).toString());
     connect(m_settings, &QtGSettings::QGSettings::settingChanged, this, &PowerManager::settingChanged);
 
     // Watchers
@@ -79,13 +79,13 @@ void PowerManager::settingChanged(const QString &key)
         m_sleepAcTimeout = m_settings->value(key).toInt();
         Q_EMIT sleepInactiveAcTimeoutChanged();
     } else if (key == QStringLiteral("sleep-inactive-ac-type")) {
-        m_sleepAcAction = m_settings->value(key).toString();
+        m_sleepAcAction = convertPowerAction(m_settings->value(key).toString());
         Q_EMIT sleepInactiveAcTypeChanged();
     } else if (key == QStringLiteral("sleep-inactive-battery-timeout")) {
         m_sleepBatteryTimeout = m_settings->value(key).toInt();
         Q_EMIT sleepInactiveBatteryTimeoutChanged();
     } else if (key == QStringLiteral("sleep-inactive-battery-type")) {
-        m_sleepBatteryAction = m_settings->value(key).toString();
+        m_sleepBatteryAction = convertPowerAction(m_settings->value(key).toString());
         Q_EMIT sleepInactiveBatteryTypeChanged();
     }
 }

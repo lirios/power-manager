@@ -60,9 +60,9 @@ private:
     QtGSettings::QGSettings *m_settings = nullptr;
     PowerActionType m_lidClosedAction = Nothing;
     int m_sleepAcTimeout = 0;
-    QString m_sleepAcAction;
+    PowerActionType m_sleepAcAction = Nothing;
     int m_sleepBatteryTimeout = 0;
-    QString m_sleepBatteryAction;
+    PowerActionType m_sleepBatteryAction = Nothing;
 
     PowerActionType convertPowerAction(const QString &action);
 
