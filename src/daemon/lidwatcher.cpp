@@ -54,6 +54,10 @@ void LidWatcher::handleLidClosed()
             if (m_localDevice->canHibernate())
                 m_localDevice->hibernate();
             break;
+        case PowerManager::HybridSleep:
+            if (m_localDevice->canHybridSleep())
+                m_localDevice->hybridSleep();
+            break;
         default:
             break;
         }

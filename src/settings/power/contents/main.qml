@@ -216,6 +216,7 @@ ModulePage {
                             ListElement { text: QT_TR_NOOP("Ask"); value: "interactive" }
                             ListElement { text: QT_TR_NOOP("Suspend"); value: "suspend" }
                             ListElement { text: QT_TR_NOOP("Hibernate"); value: "hibernate" }
+                            ListElement { text: QT_TR_NOOP("Hybrid Sleep"); value: "hybridsleep" }
                             ListElement { text: QT_TR_NOOP("Nothing"); value: "nothing" }
                         }
                         currentIndex: {
@@ -226,9 +227,11 @@ ModulePage {
                                 return 1;
                             case "hibernate":
                                 return 2;
+                            case "hybridsleep":
+                                return 3;
                             }
 
-                            return 3;
+                            return 4;
                         }
                         onActivated: {
                             powerSettings.powerButtonAction = model.get(index).value;
@@ -244,6 +247,7 @@ ModulePage {
                         model: ListModel {
                             ListElement { text: QT_TR_NOOP("Suspend"); value: "suspend" }
                             ListElement { text: QT_TR_NOOP("Hibernate"); value: "hibernate" }
+                            ListElement { text: QT_TR_NOOP("Hybrid Sleep"); value: "hybridsleep" }
                             ListElement { text: QT_TR_NOOP("Nothing"); value: "nothing" }
                         }
                         currentIndex: {
@@ -252,9 +256,11 @@ ModulePage {
                                 return 0;
                             case "hibernate":
                                 return 1;
+                            case "hybridsleep":
+                                return 2;
                             }
 
-                            return 2;
+                            return 3;
                         }
                         visible: LocalDevice.lidPresent
                         onActivated: {

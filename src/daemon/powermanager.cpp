@@ -61,12 +61,13 @@ int PowerManager::sleepInactiveBatteryTimeout() const
 
 PowerManager::PowerActionType PowerManager::convertPowerAction(const QString &action)
 {
-    if (action == QStringLiteral("nothing"))
-        return Nothing;
-    else if (action == QStringLiteral("suspend"))
+    if (action == QStringLiteral("suspend"))
         return Suspend;
     else if (action == QStringLiteral("hibernate"))
         return Hibernate;
+    else if (action == QStringLiteral("hybridsleep"))
+        return HybridSleep;
+    return Nothing;
 }
 
 void PowerManager::settingChanged(const QString &key)

@@ -15,10 +15,12 @@
     <value nick="interactive" value="1"/>
     <value nick="suspend" value="2"/>
     <value nick="hibernate" value="3"/>
+    <value nick="hybridsleep" value="4"/>
   </enum>
   <enum id="io.liri.hardware.PowerActionType">
     <value nick="nothing" value="0"/>
     <value nick="suspend" value="1"/>
     <value nick="hibernate" value="2"/>
+    <value nick="hybridsleep" value="3"/>
   </enum>
 </schemalist>

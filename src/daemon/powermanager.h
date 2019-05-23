@@ -37,7 +37,8 @@ public:
     enum PowerActionType {
         Nothing,
         Suspend,
-        Hibernate
+        Hibernate,
+        HybridSleep
     };
     Q_ENUM(PowerActionType)
 
