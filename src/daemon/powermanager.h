@@ -30,15 +30,26 @@
 class PowerManager : public QObject
 {
     Q_OBJECT
+    Q_PROPERTY(PowerActionType lidClosedAction READ lidClosedAction NOTIFY lidClosedActionChanged)
     Q_PROPERTY(int sleepInactiveAcTimeout READ sleepInactiveAcTimeout NOTIFY sleepInactiveAcTimeoutChanged)
     Q_PROPERTY(int sleepInactiveBatteryTimeout READ sleepInactiveBatteryTimeout NOTIFY sleepInactiveBatteryTimeoutChanged)
 public:
+    enum PowerActionType {
+        Nothing,
+        Suspend,
+        Hibernate
+    };
+    Q_ENUM(PowerActionType)
+
     explicit PowerManager(QObject *parent = nullptr);
+
+    PowerActionType lidClosedAction() const;
 
     int sleepInactiveAcTimeout() const;
     int sleepInactiveBatteryTimeout() const;
 
 Q_SIGNALS:
+    void lidClosedActionChanged();
     void sleepInactiveAcTimeoutChanged();
     void sleepInactiveAcTypeChanged();
     void sleepInactiveBatteryTimeoutChanged();
@@ -46,10 +57,13 @@ Q_SIGNALS:
 
 private:
     QtGSettings::QGSettings *m_settings = nullptr;
+    PowerActionType m_lidClosedAction = Nothing;
     int m_sleepAcTimeout = 0;
     QString m_sleepAcAction;
     int m_sleepBatteryTimeout = 0;
     QString m_sleepBatteryAction;
+
+    PowerActionType convertPowerAction(const QString &action);
 
 private Q_SLOTS:
     void settingChanged(const QString &key);

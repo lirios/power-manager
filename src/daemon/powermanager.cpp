@@ -22,6 +22,7 @@
  ***************************************************************************/
 
 #include "batterywatcher.h"
+#include "lidwatcher.h"
 #include "powermanager.h"
 
 PowerManager::PowerManager(QObject *parent)
@@ -31,6 +32,7 @@ PowerManager::PowerManager(QObject *parent)
     m_settings = new QtGSettings::QGSettings(QStringLiteral("io.liri.hardware.power"),
                                              QStringLiteral("/io/liri/hardware/power/"),
                                              this);
+    m_lidClosedAction = convertPowerAction(m_settings->value(QStringLiteral("lid-closed-type")).toString());
     m_sleepAcTimeout = m_settings->value(QStringLiteral("sleep-inactive-ac-timeout")).toInt();
     m_sleepAcAction = m_settings->value(QStringLiteral("sleep-inactive-ac-type")).toString();
     m_sleepBatteryTimeout = m_settings->value(QStringLiteral("sleep-inactive-battery-timeout")).toInt();
@@ -39,6 +41,12 @@ PowerManager::PowerManager(QObject *parent)
 
     // Watchers
     new BatteryWatcher(this);
+    new LidWatcher(this);
+}
+
+PowerManager::PowerActionType PowerManager::lidClosedAction() const
+{
+    return m_lidClosedAction;
 }
 
 int PowerManager::sleepInactiveAcTimeout() const
@@ -51,9 +59,22 @@ int PowerManager::sleepInactiveBatteryTimeout() const
     return m_sleepBatteryTimeout;
 }
 
+PowerManager::PowerActionType PowerManager::convertPowerAction(const QString &action)
+{
+    if (action == QStringLiteral("nothing"))
+        return Nothing;
+    else if (action == QStringLiteral("suspend"))
+        return Suspend;
+    else if (action == QStringLiteral("hibernate"))
+        return Hibernate;
+}
+
 void PowerManager::settingChanged(const QString &key)
 {
-    if (key == QStringLiteral("sleep-inactive-ac-timeout")) {
+    if (key == QStringLiteral("lid-closed-type")) {
+        m_lidClosedAction = convertPowerAction(m_settings->value(key).toString());
+        Q_EMIT lidClosedActionChanged();
+    } else if (key == QStringLiteral("sleep-inactive-ac-timeout")) {
         m_sleepAcTimeout = m_settings->value(key).toInt();
         Q_EMIT sleepInactiveAcTimeoutChanged();
     } else if (key == QStringLiteral("sleep-inactive-ac-type")) {

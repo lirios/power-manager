@@ -25,6 +25,13 @@
         Laptop panel screen brightness used when the session is idle.
       </description>
     </key>
+    <key name="lid-closed-type" enum="io.liri.hardware.PowerActionType">
+      <default>'suspend'</default>
+      <summary>Type of sleeping to perform when the lid is closed</summary>
+      <description>
+        Whether to hibernate, suspend or do nothing when the laptop lid is closed.
+      </description>
+    </key>
     <key name="power-button-action" enum="io.liri.hardware.PowerButtonActionType">
       <default>'interactive'</default>
       <summary>Power button action</summary>

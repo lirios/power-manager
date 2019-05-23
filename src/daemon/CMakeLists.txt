@@ -6,6 +6,12 @@ endif()
 if(NOT TARGET Liri::Core)
     find_package(Liri1Core REQUIRED)
 endif()
+if(NOT TARGET Liri::LocalDevice)
+    find_package(Liri1LocalDevice REQUIRED)
+endif()
+if(NOT TARGET Liri::Logind)
+    find_package(Liri1Logind REQUIRED)
+endif()
 if(NOT TARGET Liri::Notifications)
     find_package(Liri1Notifications REQUIRED)
 endif()
@@ -24,6 +30,8 @@ liri_add_executable(LiriPowerManager
         batterywatcher.h
         idlewatcher.cpp
         idlewatcher.h
+        lidwatcher.cpp
+        lidwatcher.h
         main.cpp
         powermanager.cpp
         powermanager.h
@@ -42,6 +50,8 @@ liri_add_executable(LiriPowerManager
         Qt5::DBus
         Liri::Qt5GSettings
         Liri::Core
+        Liri::LocalDevice
+        Liri::Logind
         Liri::Notifications
         KF5::Solid
     GUI

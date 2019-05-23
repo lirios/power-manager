@@ -28,6 +28,7 @@ import QtQuick.Controls.Material 2.2
 import Fluid.Controls 1.0 as FluidControls
 import Liri.Settings 1.0
 import Liri.Power 1.0
+import Liri.Device 1.0
 import QtGSettings 1.0
 
 ModulePage {
@@ -231,6 +232,33 @@ ModulePage {
                         }
                         onActivated: {
                             powerSettings.powerButtonAction = model.get(index).value;
+                        }
+                    }
+                }
+
+                FluidControls.ListItem {
+                    text: qsTr("When the lid is closed")
+                    rightItem: ComboBox {
+                        anchors.centerIn: parent
+                        textRole: "text"
+                        model: ListModel {
+                            ListElement { text: QT_TR_NOOP("Suspend"); value: "suspend" }
+                            ListElement { text: QT_TR_NOOP("Hibernate"); value: "hibernate" }
+                            ListElement { text: QT_TR_NOOP("Nothing"); value: "nothing" }
+                        }
+                        currentIndex: {
+                            switch (powerSettings.lidClosedType) {
+                            case "suspend":
+                                return 0;
+                            case "hibernate":
+                                return 1;
+                            }
+
+                            return 2;
+                        }
+                        visible: LocalDevice.lidPresent
+                        onActivated: {
+                            powerSettings.lidClosedType = model.get(index).value;
                         }
                     }
                 }
