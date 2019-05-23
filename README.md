@@ -5,7 +5,6 @@ Power Manager
 [![GitHub release](https://img.shields.io/github/release/lirios/power-manager.svg)](https://github.com/lirios/power-manager)
 [![Build Status](https://travis-ci.org/lirios/power-manager.svg?branch=develop)](https://travis-ci.org/lirios/power-manager)
 [![GitHub issues](https://img.shields.io/github/issues/lirios/power-manager.svg)](https://github.com/lirios/power-manager/issues)
-[![Maintained](https://img.shields.io/maintenance/yes/2018.svg)](https://github.com/lirios/power-manager/commits/develop)
 
 Power management support for Liri.
 
