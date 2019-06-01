@@ -32,6 +32,8 @@ import Liri.Device 1.0
 import QtGSettings 1.0
 
 ModulePage {
+    id: page
+
     GSettings {
         id: sessionSettings
 
@@ -59,10 +61,9 @@ ModulePage {
         clip: true
 
         Column {
-            width: Math.max(implicitWidth, parent.width)
-
             ModuleContainer {
                 title: qsTr("Devices")
+                width: page.width
                 visible: repeater.count > 0
 
                 Repeater {
@@ -74,6 +75,7 @@ ModulePage {
 
             ModuleContainer {
                 title: qsTr("Power Saving")
+                width: page.width
 
                 FluidControls.ListItem {
                     text: qsTr("Screen brightness")
@@ -180,6 +182,7 @@ ModulePage {
 
             ModuleContainer {
                 title: qsTr("Suspend & Power Button")
+                width: page.width
 
                 FluidControls.ListItem {
                     text: qsTr("Automatic suspend")
