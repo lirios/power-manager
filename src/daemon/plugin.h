@@ -1,7 +1,7 @@
 /****************************************************************************
  * This file is part of Liri.
  *
- * Copyright (C) 2018 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
+ * Copyright (C) 2019 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
  *
  * $BEGIN_LICENSE:GPL3+$
  *
@@ -21,29 +21,33 @@
  * $END_LICENSE$
  ***************************************************************************/
 
-#include <QCoreApplication>
-#include <QDBusConnection>
+#ifndef POWERPLUGIN_H_H
+#define POWERPLUGIN_H_H
 
-#include "translation.h"
+#include <QLoggingCategory>
+#include <QObject>
 
-int main(int argc, char *argv[])
+#include <LiriSession/SessionModule>
+
+Q_DECLARE_LOGGING_CATEGORY(lcSession)
+
+class PowerManager;
+
+class PowerPlugin : public Liri::SessionModule
 {
-    // Setup application
-    QCoreApplication app(argc, argv);
-    app.setApplicationName(QStringLiteral("Power Manager"));
-    app.setApplicationVersion(QStringLiteral(VERSION));
-    app.setOrganizationDomain(QStringLiteral("liri.io"));
-    app.setOrganizationName(QStringLiteral("Liri"));
+    Q_OBJECT
+    Q_PLUGIN_METADATA(IID LiriSessionModule_iid FILE "plugin.json")
+    Q_INTERFACES(Liri::SessionModule)
+public:
+    explicit PowerPlugin(QObject *parent = nullptr);
 
-    // Register
-    if (!QDBusConnection::sessionBus().registerService(QStringLiteral("io.liri.PowerManager"))) {
-        qWarning("Unable to register D-Bus service");
-        return 1;
-    }
+    StartupPhase startupPhase() const override;
 
-    // Load translations
-    loadQtTranslations();
-    loadDaemonTranslations();
+    bool start(const QStringList &args = QStringList()) override;
+    bool stop() override;
 
-    return app.exec();
-}
+private:
+    PowerManager *m_manager = nullptr;
+};
+
+#endif // POWERPLUGIN_H_H

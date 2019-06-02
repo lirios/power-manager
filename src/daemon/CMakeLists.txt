@@ -15,6 +15,9 @@ endif()
 if(NOT TARGET Liri::Notifications)
     find_package(Liri1Notifications REQUIRED)
 endif()
+if(NOT TARGET Liri::Session)
+    find_package(Liri1Session REQUIRED)
+endif()
 
 # Translations
 file(GLOB LiriPowerManager_TRANSLATIONS "${CMAKE_CURRENT_SOURCE_DIR}/translations/*_*.ts")
@@ -22,9 +25,9 @@ qt5_add_translation(LiriPowerManager_QM_FILES ${LiriPowerManager_TRANSLATIONS})
 install(FILES ${LiriPowerManager_QM_FILES}
         DESTINATION "${INSTALL_DATADIR}/liri-power-manager/translations")
 
-liri_add_executable(LiriPowerManager
-    OUTPUT_NAME
-        "liri-power-manager"
+liri_add_plugin(power
+    TYPE
+        liri/sessionmodules
     SOURCES
         batterywatcher.cpp
         batterywatcher.h
@@ -32,7 +35,8 @@ liri_add_executable(LiriPowerManager
         idlewatcher.h
         lidwatcher.cpp
         lidwatcher.h
-        main.cpp
+        plugin.cpp
+        plugin.h
         powermanager.cpp
         powermanager.h
         translation.cpp
@@ -41,18 +45,13 @@ liri_add_executable(LiriPowerManager
     DEFINES
         QT_NO_CAST_FROM_ASCII
         QT_NO_FOREACH
-        VERSION="${PROJECT_VERSION}"
-    DESKTOP
-        "${CMAKE_CURRENT_SOURCE_DIR}/io.liri.PowerManager.desktop"
-    DESKTOP_INSTALL_DIRECTORY
-        "${INSTALL_SYSCONFDIR}/xdg/autostart"
     LIBRARIES
         Qt5::DBus
+        Liri::Session
         Liri::Qt5GSettings
         Liri::Core
         Liri::LocalDevice
         Liri::Logind
         Liri::Notifications
         KF5::Solid
-    GUI
 )
