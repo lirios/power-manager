@@ -11,4 +11,6 @@ X-Liri-Settings-SymbolicIcon=notification/power
 
 
 # Translations
+Icon[pt_BR]=preferences-system-power-management
 Name[pt_BR]=Energia
+Comment[pt_BR]=Veja o status de sua bateria e altere as configurações de economia de energia

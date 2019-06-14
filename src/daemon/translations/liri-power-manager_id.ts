@@ -12,19 +12,19 @@
         <location filename="../batterywatcher.cpp" line="86"/>
         <source>UPS Discharging</source>
         <extracomment>UPS discharging notification summary</extracomment>
-        <translation>UPS tidak mengecas</translation>
+        <translation>Pemakaian UPS</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="92"/>
         <source>%1 of UPS backup power remaining (%2%)</source>
         <extracomment>UPS discharging notification body</extracomment>
-        <translation type="unfinished"/>
+        <translation>Tersisa %1 dari cadangan daya tersisa (%2%)</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="95"/>
         <source>Unkown amount of UPS backup power remaining</source>
         <extracomment>UPS discharging notification body</extracomment>
-        <translation type="unfinished"/>
+        <translation>Tidak diketahui daya UPS yang tersisa</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="120"/>
@@ -72,7 +72,7 @@ PDA battery level is low</extracomment>
         <location filename="../batterywatcher.cpp" line="141"/>
         <source>PDA is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Daya PDA sangat lemah (%1%). Perangkat ini akan berhenti berfungsi apabila dayanya tidak diisi.</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="146"/>
@@ -81,13 +81,13 @@ PDA battery level is low</extracomment>
         <extracomment>Mouse battery level is critically low
 ----------
 Mouse battery level is low</extracomment>
-        <translation type="unfinished"/>
+        <translation>Baterai tetikus lemah</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="148"/>
         <source>Wireless mouse is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Daya dari tetikus nirkabel lemah (%1%). Perangkat ini akan berhenti berfungsi apabila dayanya tidak diisi.</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="153"/>
@@ -96,13 +96,13 @@ Mouse battery level is low</extracomment>
         <extracomment>Keyboard battery level is critically low
 ----------
 Keyboard battery level is low</extracomment>
-        <translation type="unfinished"/>
+        <translation>Baterai keyboard lemah</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="155"/>
         <source>Wireless keyboard is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Daya dari keybard nirkabel lemah (%1%). Perangkat ini akan berhenti berfungsi apabila dayanya tidak diisi.</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="160"/>
@@ -111,13 +111,13 @@ Keyboard battery level is low</extracomment>
         <extracomment>Combined keyboard/mouse battery level is critically low
 ----------
 Combined keyboard/mouse battery level is low</extracomment>
-        <translation type="unfinished"/>
+        <translation>Baterai keyboard dan tetikus lemah</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="162"/>
         <source>Wireless combined keyboard and mouse is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Daya dari baterai keyboard dan tetikus lemah (%1%). Perangkat ini akan berhenti berfungsi apabila dayanya tidak diisi</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="167"/>
@@ -126,13 +126,13 @@ Combined keyboard/mouse battery level is low</extracomment>
         <extracomment>Camera battery level is critically low
 ----------
 Camera battery level is low</extracomment>
-        <translation type="unfinished"/>
+        <translation>Baterai kamera lemah</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="169"/>
         <source>Camera is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Daya dari baterai kamera lemah (%1%). Perangkat ini akan berhenti berfungsi apabila dayanya tidak diisi.</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="174"/>
@@ -141,13 +141,13 @@ Camera battery level is low</extracomment>
         <extracomment>Phone battery level is critically low
 ----------
 Phone battery level is low</extracomment>
-        <translation type="unfinished"/>
+        <translation>Baterai telepon seluler lemah</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="176"/>
         <source>Cell phone is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Daya dari baterai telepon seluler lemah (%1). Perangkat ini akan berhenti berfungsi apabila dayanya tidak diisi.</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="181"/>
@@ -156,7 +156,7 @@ Phone battery level is low</extracomment>
         <extracomment>Monitor battery level is critically low
 ----------
 Monitor battery level is low</extracomment>
-        <translation type="unfinished"/>
+        <translation>Baterai monitor lemah</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="183"/>
@@ -180,7 +180,7 @@ Monitor battery level is low</extracomment>
         <location filename="../batterywatcher.cpp" line="205"/>
         <source>Laptop battery low</source>
         <extracomment>Laptop battery low, and we have more than one battery of that kind</extracomment>
-        <translation type="unfinished"/>
+        <translation>Baterai laptop lemah</translation>
     </message>
     <message>
         <location filename="../batterywatcher.cpp" line="208"/>

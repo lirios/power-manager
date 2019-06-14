@@ -4,7 +4,7 @@
     <message>
         <location filename="../contents/AutomaticSuspendDialog.qml" line="37"/>
         <source>Automatic Suspend</source>
-        <translation>Suspensão automática</translation>
+        <translation>Suspender automaticamente</translation>
     </message>
     <message>
         <location filename="../contents/AutomaticSuspendDialog.qml" line="49"/>
@@ -85,162 +85,176 @@
     </message>
 </context>
 <context>
-    <name>Preflet</name>
+    <name>main</name>
     <message>
-        <location filename="../contents/Preflet.qml" line="57"/>
+        <location filename="../contents/main.qml" line="65"/>
         <source>Devices</source>
         <translation>Dispositivos</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="68"/>
+        <location filename="../contents/main.qml" line="77"/>
         <source>Power Saving</source>
         <translation>Economia de energia</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="71"/>
+        <location filename="../contents/main.qml" line="81"/>
         <source>Screen brightness</source>
         <translation>Brilho da tela</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="83"/>
+        <location filename="../contents/main.qml" line="93"/>
         <source>Keyboard brightness</source>
         <translation>Brilho do teclado</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="95"/>
+        <location filename="../contents/main.qml" line="105"/>
         <source>Dim screen when inactive</source>
         <translation>Escurecer tela quando inativo</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="105"/>
+        <location filename="../contents/main.qml" line="115"/>
         <source>Blank screen</source>
         <translation>Tela em branco</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="111"/>
+        <location filename="../contents/main.qml" line="121"/>
         <source>1 minute</source>
         <translation>1 minuto</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="112"/>
+        <location filename="../contents/main.qml" line="122"/>
         <source>2 minutes</source>
         <translation>2 minutos</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="113"/>
+        <location filename="../contents/main.qml" line="123"/>
         <source>3 minutes</source>
         <translation>3 minutos</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="114"/>
+        <location filename="../contents/main.qml" line="124"/>
         <source>4 minutes</source>
         <translation>4 minutos</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="115"/>
+        <location filename="../contents/main.qml" line="125"/>
         <source>5 minutes</source>
         <translation>5 minutos</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="116"/>
+        <location filename="../contents/main.qml" line="126"/>
         <source>8 minutes</source>
         <translation>8 minutos</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="117"/>
+        <location filename="../contents/main.qml" line="127"/>
         <source>10 minutes</source>
         <translation>10 minutos</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="118"/>
+        <location filename="../contents/main.qml" line="128"/>
         <source>12 minutes</source>
         <translation>12 minutos</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="119"/>
+        <location filename="../contents/main.qml" line="129"/>
         <source>15 minutes</source>
         <translation>15 minutos</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="120"/>
+        <location filename="../contents/main.qml" line="130"/>
         <source>Never</source>
         <translation>Nunca</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="153"/>
+        <location filename="../contents/main.qml" line="163"/>
         <source>Wi-Fi</source>
         <translation>Wi-Fi</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="154"/>
+        <location filename="../contents/main.qml" line="164"/>
         <source>Turn off Wi-Fi to save power</source>
         <translation>Desligar Wi-Fi para economizar energia</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="163"/>
+        <location filename="../contents/main.qml" line="173"/>
         <source>Bluetooth</source>
         <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="164"/>
+        <location filename="../contents/main.qml" line="174"/>
         <source>Turn off Bluetooth to save power</source>
         <translation>Desligar Bluetooth para economizar energia</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="174"/>
+        <location filename="../contents/main.qml" line="184"/>
         <source>Suspend &amp; Power Button</source>
-        <translation>Botões de energia e suspensão</translation>
+        <translation>Botão de ligar e suspender</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="177"/>
+        <location filename="../contents/main.qml" line="188"/>
         <source>Automatic suspend</source>
-        <translation>Suspensão automática</translation>
+        <translation>Suspender automaticamente</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="186"/>
-        <location filename="../contents/Preflet.qml" line="192"/>
+        <location filename="../contents/main.qml" line="197"/>
+        <location filename="../contents/main.qml" line="203"/>
         <source>On</source>
-        <translation type="unfinished"/>
+        <translation>Ligado</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="188"/>
+        <location filename="../contents/main.qml" line="199"/>
         <source>When on battery power</source>
-        <translation>Enquanto na bateria</translation>
+        <translation>Quando na bateria</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="190"/>
+        <location filename="../contents/main.qml" line="201"/>
         <source>When plugged in</source>
-        <translation>Enquanto conectado</translation>
+        <translation>Quando conectado</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="195"/>
+        <location filename="../contents/main.qml" line="206"/>
         <source>Off</source>
-        <translation type="unfinished"/>
+        <translation>Desligado</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="203"/>
+        <location filename="../contents/main.qml" line="214"/>
         <source>When the Power Button is pressed</source>
-        <translation>Quando o botão de energia é pressionado</translation>
+        <translation>Quando o botão de ligar for pressionado</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="208"/>
+        <location filename="../contents/main.qml" line="219"/>
         <source>Ask</source>
         <translation>Perguntar</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="209"/>
+        <location filename="../contents/main.qml" line="220"/>
+        <location filename="../contents/main.qml" line="251"/>
         <source>Suspend</source>
         <translation>Suspender</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="210"/>
+        <location filename="../contents/main.qml" line="221"/>
+        <location filename="../contents/main.qml" line="252"/>
         <source>Hibernate</source>
         <translation>Hibernar</translation>
     </message>
     <message>
-        <location filename="../contents/Preflet.qml" line="211"/>
+        <location filename="../contents/main.qml" line="222"/>
+        <location filename="../contents/main.qml" line="253"/>
+        <source>Hybrid Sleep</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../contents/main.qml" line="223"/>
+        <location filename="../contents/main.qml" line="254"/>
         <source>Nothing</source>
-        <translation>Nada</translation>
+        <translation>Fazer nada</translation>
+    </message>
+    <message>
+        <location filename="../contents/main.qml" line="246"/>
+        <source>When the lid is closed</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
