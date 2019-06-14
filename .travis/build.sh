@@ -15,7 +15,7 @@ travis_end "install_packages"
 # Install artifacts
 travis_start "artifacts"
 msg "Install artifacts..."
-for name in cmakeshared libliri qtgsettings; do
+for name in cmakeshared libliri qtgsettings session; do
     /usr/local/bin/liri-download-artifacts $TRAVIS_BRANCH ${name}-artifacts.tar.gz
 done
 travis_end "artifacts"
