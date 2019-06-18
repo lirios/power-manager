@@ -243,7 +243,7 @@
         <location filename="../contents/main.qml" line="222"/>
         <location filename="../contents/main.qml" line="253"/>
         <source>Hybrid Sleep</source>
-        <translation type="unfinished"/>
+        <translation>Mišraus miego būsena</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="223"/>
@@ -254,7 +254,7 @@
     <message>
         <location filename="../contents/main.qml" line="246"/>
         <source>When the lid is closed</source>
-        <translation type="unfinished"/>
+        <translation>Uždarius dangtį</translation>
     </message>
 </context>
 </TS>
