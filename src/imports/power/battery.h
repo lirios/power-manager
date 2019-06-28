@@ -60,7 +60,6 @@ class Battery : public QObject
     Q_PROPERTY(QString vendor READ vendor CONSTANT)
     Q_PROPERTY(QString product READ product CONSTANT)
     Q_PROPERTY(QString serial READ serial CONSTANT)
-    Q_ENUMS(Type Technology ChargeState)
 public:
     enum Type {
         UnknownBattery,
@@ -74,6 +73,7 @@ public:
         PhoneBattery,
         MonitorBattery
     };
+    Q_ENUM(Type)
 
     enum Technology {
         UnknownTechnology,
@@ -84,8 +84,10 @@ public:
         NickelCadmium,
         NickelMetalHydride
     };
+    Q_ENUM(Technology)
 
     enum ChargeState { Stable, Charging, Discharging, FullyCharged };
+    Q_ENUM(ChargeState)
 
     explicit Battery(const QString &udi, QObject *parent = nullptr);
 

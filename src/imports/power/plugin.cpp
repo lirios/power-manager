@@ -38,7 +38,7 @@ public:
 
         qmlRegisterType<BatteriesModel>(uri, 1, 0, "BatteriesModel");
         qmlRegisterUncreatableType<Battery>(uri, 1, 0, "Battery",
-                                            QLatin1String("Cannot create Battery object"));
+                                            QStringLiteral("Cannot create Battery object"));
     }
 };
 
