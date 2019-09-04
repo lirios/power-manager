@@ -28,37 +28,37 @@ Battery::Battery(const QString &udi, QObject *parent)
     , m_device(Solid::Device(udi))
 {
     m_battery = m_device.as<Solid::Battery>();
-    connect(m_battery, &Solid::Battery::chargePercentChanged,
+    connect(m_battery, &Solid::Battery::chargePercentChanged, this,
             [this](int, const QString &) { Q_EMIT chargePercentChanged(); });
-    connect(m_battery, &Solid::Battery::chargePercentChanged,
+    connect(m_battery, &Solid::Battery::chargePercentChanged, this,
             [this](int, const QString &) { Q_EMIT summaryChanged(); });
-    connect(m_battery, &Solid::Battery::chargePercentChanged,
+    connect(m_battery, &Solid::Battery::chargePercentChanged, this,
             [this](int, const QString &) { Q_EMIT chargeIconNameChanged(); });
-    connect(m_battery, &Solid::Battery::capacityChanged,
+    connect(m_battery, &Solid::Battery::capacityChanged, this,
             [this](int, const QString &) { Q_EMIT capacityChanged(); });
-    connect(m_battery, &Solid::Battery::powerSupplyStateChanged,
+    connect(m_battery, &Solid::Battery::powerSupplyStateChanged, this,
             [this](bool, const QString &) { Q_EMIT powerSupplyChanged(); });
-    connect(m_battery, &Solid::Battery::timeToEmptyChanged,
+    connect(m_battery, &Solid::Battery::timeToEmptyChanged, this,
             [this](qlonglong, const QString &) { Q_EMIT timeToEmptyChanged(); });
-    connect(m_battery, &Solid::Battery::timeToEmptyChanged,
+    connect(m_battery, &Solid::Battery::timeToEmptyChanged, this,
             [this](qlonglong, const QString &) { Q_EMIT summaryChanged(); });
-    connect(m_battery, &Solid::Battery::timeToFullChanged,
+    connect(m_battery, &Solid::Battery::timeToFullChanged, this,
             [this](qlonglong, const QString &) { Q_EMIT timeToFullChanged(); });
-    connect(m_battery, &Solid::Battery::timeToFullChanged,
+    connect(m_battery, &Solid::Battery::timeToFullChanged, this,
             [this](qlonglong, const QString &) { Q_EMIT summaryChanged(); });
-    connect(m_battery, &Solid::Battery::chargeStateChanged,
+    connect(m_battery, &Solid::Battery::chargeStateChanged, this,
             [this](int, const QString &) { Q_EMIT chargeStateChanged(); });
-    connect(m_battery, &Solid::Battery::chargeStateChanged,
+    connect(m_battery, &Solid::Battery::chargeStateChanged, this,
             [this](int, const QString &) { Q_EMIT chargeIconNameChanged(); });
-    connect(m_battery, &Solid::Battery::chargeStateChanged,
+    connect(m_battery, &Solid::Battery::chargeStateChanged, this,
             [this](int, const QString &) { Q_EMIT summaryChanged(); });
-    connect(m_battery, &Solid::Battery::energyChanged,
+    connect(m_battery, &Solid::Battery::energyChanged, this,
             [this](double, const QString &) { Q_EMIT energyChanged(); });
-    connect(m_battery, &Solid::Battery::energyRateChanged,
+    connect(m_battery, &Solid::Battery::energyRateChanged, this,
             [this](double, const QString &) { Q_EMIT energyRateChanged(); });
-    connect(m_battery, &Solid::Battery::voltageChanged,
+    connect(m_battery, &Solid::Battery::voltageChanged, this,
             [this](double, const QString &) { Q_EMIT voltageChanged(); });
-    connect(m_battery, &Solid::Battery::temperatureChanged,
+    connect(m_battery, &Solid::Battery::temperatureChanged, this,
             [this](double, const QString &) { Q_EMIT temperatureChanged(); });
 }
 

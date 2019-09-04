@@ -31,7 +31,7 @@ BatteriesModel::BatteriesModel(QObject *parent)
 {
     // Populate list as devices come and go
     Solid::DeviceNotifier *notifier = Solid::DeviceNotifier::instance();
-    connect(notifier, &Solid::DeviceNotifier::deviceAdded, [this](const QString &udi) {
+    connect(notifier, &Solid::DeviceNotifier::deviceAdded, this, [this](const QString &udi) {
         Solid::Device device(udi);
         if (device.as<Solid::Battery>()) {
             Battery *primary = primaryBattery();
@@ -47,7 +47,7 @@ BatteriesModel::BatteriesModel(QObject *parent)
                 Q_EMIT primaryBatteryChanged();
         }
     });
-    connect(notifier, &Solid::DeviceNotifier::deviceRemoved, [this](const QString &udi) {
+    connect(notifier, &Solid::DeviceNotifier::deviceRemoved, this, [this](const QString &udi) {
         if (!m_batteriesMap.contains(udi))
             return;
 
@@ -69,8 +69,8 @@ BatteriesModel::BatteriesModel(QObject *parent)
     });
 
     // Add already existing devices
-    Battery *primary = primaryBattery();
-    for (const Solid::Device &device : Solid::Device::allDevices()) {
+    const auto allDevices = Solid::Device::allDevices();
+    for (const Solid::Device &device : allDevices) {
         if (device.as<Solid::Battery>()) {
             Battery *battery = new Battery(device.udi());
 
@@ -78,10 +78,6 @@ BatteriesModel::BatteriesModel(QObject *parent)
             m_batteries.append(battery);
             m_batteriesMap[device.udi()] = battery;
             endInsertRows();
-            Q_EMIT countChanged();
-
-            if (primary != primaryBattery())
-                Q_EMIT primaryBatteryChanged();
         }
     }
 }
@@ -130,7 +126,7 @@ QHash<int, QByteArray> BatteriesModel::roleNames() const
 
 int BatteriesModel::rowCount(const QModelIndex &parent) const
 {
-    Q_UNUSED(parent);
+    Q_UNUSED(parent)
     return m_batteries.size();
 }
 
