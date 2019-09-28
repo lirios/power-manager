@@ -1,0 +1,9 @@
+[Unit]
+Description=Power managent handling
+PartOf=liri-daemons.target
+
+[Service]
+Type=dbus
+ExecStart=@ABSOLUTE_LIBEXECDIR@/liri-daemon --module=power
+BusName=io.liri.Daemon.Modules.Power
+Restart=on-failure

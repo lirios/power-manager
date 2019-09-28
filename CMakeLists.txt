@@ -19,6 +19,15 @@ set(KF5_MIN_VERSION "5.48.0")
 ## Liri specific setup common for all modules:
 include(LiriSetup)
 
+## Features:
+option(LIRI_ENABLE_SYSTEMD "Enable systemd support" ON)
+add_feature_info("Liri::Systemd" LIRI_ENABLE_SYSTEMD "Enable systemd support")
+
+## Variables:
+if(LIRI_ENABLE_SYSTEMD)
+    set(INSTALL_SYSTEMDUSERUNITDIR "${INSTALL_LIBDIR}/systemd/user" CACHE PATH "systemd user unit directory [PREFIX/lib/systemd/user]")
+endif()
+
 ## Find Qt 5:
 find_package(Qt5 "${QT_MIN_VERSION}"
     CONFIG REQUIRED
@@ -33,6 +42,9 @@ find_package(Qt5 "${QT_MIN_VERSION}"
 
 ## Add subdirectories:
 add_subdirectory(data/settings)
+if(LIRI_ENABLE_SYSTEMD)
+    add_subdirectory(data/systemd)
+endif()
 add_subdirectory(src/imports/power)
 add_subdirectory(src/daemon)
 add_subdirectory(src/indicators/power)
