@@ -27,24 +27,22 @@
 #include <QLoggingCategory>
 #include <QObject>
 
-#include <LiriSession/SessionModule>
+#include <LiriDaemon/DaemonModule>
 
-Q_DECLARE_LOGGING_CATEGORY(lcSession)
+Q_DECLARE_LOGGING_CATEGORY(lcDaemon)
 
 class PowerManager;
 
-class PowerPlugin : public Liri::SessionModule
+class PowerPlugin : public Liri::DaemonModule
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID LiriSessionModule_iid FILE "plugin.json")
-    Q_INTERFACES(Liri::SessionModule)
+    Q_PLUGIN_METADATA(IID LiriDaemonModule_iid FILE "plugin.json")
+    Q_INTERFACES(Liri::DaemonModule)
 public:
     explicit PowerPlugin(QObject *parent = nullptr);
 
-    StartupPhase startupPhase() const override;
-
-    bool start(const QStringList &args = QStringList()) override;
-    bool stop() override;
+    void start() override;
+    void stop() override;
 
 private:
     PowerManager *m_manager = nullptr;

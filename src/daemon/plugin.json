@@ -1,6 +1,6 @@
 {
-    "Id": "io.liri.SessionManager.Modules.PowerManager",
-    "Type": "SessionModule",
+    "Id": "power",
+    "Type": "DaemonModule",
     "Name": "Power Manager",
     "Description": "Power consumption management",
     "Version": "1.0.0",
@@ -8,5 +8,7 @@
         "Pier Luigi Fiorini <pierluigi.fiorini@liri.io>"
     ],
     "License": "GPL-3.0-or-later",
-    "Website": "https://liri.io"
+    "Website": "https://liri.io",
+    "X-Liri-DaemonModule-AutoLoad": true,
+    "X-Liri-DaemonModule-ServiceName": "io.liri.Daemon.Modules.Power"
 }

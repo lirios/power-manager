@@ -15,8 +15,8 @@ endif()
 if(NOT TARGET Liri::Notifications)
     find_package(Liri1Notifications REQUIRED)
 endif()
-if(NOT TARGET Liri::Session)
-    find_package(Liri1Session REQUIRED)
+if(NOT TARGET Liri::Daemon)
+    find_package(Liri1Daemon REQUIRED)
 endif()
 
 # Translations
@@ -27,7 +27,7 @@ install(FILES ${LiriPowerManager_QM_FILES}
 
 liri_add_plugin(power
     TYPE
-        liri/sessionmodules
+        liri/daemon
     SOURCES
         batterywatcher.cpp
         batterywatcher.h
@@ -47,7 +47,7 @@ liri_add_plugin(power
         QT_NO_FOREACH
     LIBRARIES
         Qt5::DBus
-        Liri::Session
+        Liri::Daemon
         Liri::Qt5GSettings
         Liri::Core
         Liri::LocalDevice

@@ -26,33 +26,22 @@
 #include "translation.h"
 
 PowerPlugin::PowerPlugin(QObject *parent)
-    : Liri::SessionModule(parent)
+    : Liri::DaemonModule(parent)
 {
     // Load translations
     loadQtTranslations();
     loadDaemonTranslations();
 }
 
-Liri::SessionModule::StartupPhase PowerPlugin::startupPhase() const
+void PowerPlugin::start()
 {
-    return Daemons;
-}
-
-bool PowerPlugin::start(const QStringList &args)
-{
-    Q_UNUSED(args)
-
     m_manager = new PowerManager();
-
-    return true;
 }
 
-bool PowerPlugin::stop()
+void PowerPlugin::stop()
 {
     if (m_manager) {
         m_manager->deleteLater();
         m_manager = nullptr;
     }
-
-    return true;
 }
