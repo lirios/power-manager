@@ -1,5 +1,6 @@
 [Desktop Entry]
 Comment=Battery status
+Comment[ar]=حالة البطارية
 Comment[da]=Batteristatus
 Comment[fr]=État de la batterie
 Comment[lt]=Baterijos būsena
@@ -11,6 +12,7 @@ Comment[zh_CN]=电池状态
 Icon=preferences-system-power-management
 Keywords=Power;Battery;Brightness;
 Name=Power
+Name[ar]=الطاقة
 Name[da]=Strøm
 Name[fr]=Alimentation
 Name[lt]=Maitinimas
