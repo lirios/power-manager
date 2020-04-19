@@ -1,0 +1,35 @@
+[
+  {
+    "type": "ts",
+    "directory": "src/daemon",
+    "output_path": "translations/daemon/liri-power-manager.ts"
+  },
+  {
+    "type": "desktop",
+    "source_file": "src/daemon/io.liri.PowerManager.desktop.in",
+    "file_filter": "translations/daemon/io.liri.PowerManager_<lang>.desktop",
+    "output_path": "src/daemon/io.liri.PowerManager.desktop"
+  },
+  {
+    "type": "ts",
+    "directory": ""src/indicators/power/contents",
+    "output_path": "translations/indicators/power/power.ts"
+  },
+  {
+    "type": "desktop",
+    "source_file": "src/indicators/power/metadata.desktop.in",
+    "file_filter": "translations/indicators/power/metadata_<lang>.desktop",
+    "output_path": "src/indicators/power/metadata.desktop"
+  },
+  {
+    "type": "ts",
+    "directory": "src/settings/power/contents",
+    "output_path": "translations/settings/power/power.ts"
+  },
+  {
+    "type": "desktop",
+    "source_file": "src/settings/power/metadata.desktop.in",
+    "file_filter": "translations/settings/power/metadata_<lang>.desktop",
+    "output_path": "src/settings/power/metadata.desktop"
+  }
+]

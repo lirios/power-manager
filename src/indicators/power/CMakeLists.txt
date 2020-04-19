@@ -4,4 +4,6 @@ liri_add_indicator(Power
         contents/main.qml
     METADATA
         metadata.desktop.in
+    TRANSLATIONS_PATH
+        "${CMAKE_CURRENT_SOURCE_DIR}/../../../translations/indicator"
 )

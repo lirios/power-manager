@@ -20,7 +20,7 @@ if(NOT TARGET Liri::Daemon)
 endif()
 
 # Translations
-file(GLOB LiriPowerManager_TRANSLATIONS "${CMAKE_CURRENT_SOURCE_DIR}/translations/*_*.ts")
+file(GLOB LiriPowerManager_TRANSLATIONS "${CMAKE_CURRENT_SOURCE_DIR}/../../translations/daemon/*_*.ts")
 qt5_add_translation(LiriPowerManager_QM_FILES ${LiriPowerManager_TRANSLATIONS})
 install(FILES ${LiriPowerManager_QM_FILES}
         DESTINATION "${INSTALL_DATADIR}/liri-power-manager/translations")
