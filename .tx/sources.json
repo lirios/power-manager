@@ -12,24 +12,24 @@
   },
   {
     "type": "ts",
-    "directory": ""src/indicators/power/contents",
-    "output_path": "translations/indicators/power/power.ts"
+    "directory": "src/indicators/power/contents",
+    "output_path": "translations/indicator/power.ts"
   },
   {
     "type": "desktop",
     "source_file": "src/indicators/power/metadata.desktop.in",
-    "file_filter": "translations/indicators/power/metadata_<lang>.desktop",
+    "file_filter": "translations/indicator/metadata_<lang>.desktop",
     "output_path": "src/indicators/power/metadata.desktop"
   },
   {
     "type": "ts",
     "directory": "src/settings/power/contents",
-    "output_path": "translations/settings/power/power.ts"
+    "output_path": "translations/settings/power.ts"
   },
   {
     "type": "desktop",
     "source_file": "src/settings/power/metadata.desktop.in",
-    "file_filter": "translations/settings/power/metadata_<lang>.desktop",
+    "file_filter": "translations/settings/metadata_<lang>.desktop",
     "output_path": "src/settings/power/metadata.desktop"
   }
 ]

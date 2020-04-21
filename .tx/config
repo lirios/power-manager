@@ -16,23 +16,23 @@ file_filter = translations/daemon/io.liri.PowerManager_<lang>.desktop
 [liri-power-manager.indicator]
 type = QT
 source_lang = en
-source_file = translations/indicators/power/power.ts
-file_filter = translations/indicators/power/power_<lang>.ts
+source_file = translations/indicator/power.ts
+file_filter = translations/indicator/power_<lang>.ts
 
 [liri-power-manager.indicator-metadata]
 type = DESKTOP
 source_lang = en
 source_file = src/indicators/power/metadata.desktop.in
-file_filter = translations/indicators/power/metadata_<lang>.desktop
+file_filter = translations/indicator/metadata_<lang>.desktop
 
 [liri-power-manager.settings-module]
 type = QT
 source_lang = en
-source_file = translations/settings/power/power.ts
-file_filter = translations/settings/power/power_<lang>.ts
+source_file = translations/setting/power.ts
+file_filter = translations/setting/power_<lang>.ts
 
 [liri-power-manager.settings-module-metadata]
 type = DESKTOP
 source_lang = en
 source_file = src/settings/power/metadata.desktop.in
-file_filter = translations/settings/power/metadata_<lang>.desktop
+file_filter = translations/setting/metadata_<lang>.desktop
