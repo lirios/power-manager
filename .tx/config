@@ -28,8 +28,8 @@ file_filter = translations/indicator/metadata_<lang>.desktop
 [liri-power-manager.settings-module]
 type = QT
 source_lang = en
-source_file = translations/setting/power.ts
-file_filter = translations/setting/power_<lang>.ts
+source_file = translations/settings/power.ts
+file_filter = translations/settings/power_<lang>.ts
 
 [liri-power-manager.settings-module-metadata]
 type = DESKTOP
