@@ -4,76 +4,76 @@
 <context>
     <name>AutomaticSuspendDialog</name>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="37"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="37"/>
         <source>Automatic Suspend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="49"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="49"/>
         <source>On Battery Power</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="75"/>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="151"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="75"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="151"/>
         <source>Delay</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="86"/>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="160"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="86"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="160"/>
         <source>15 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="87"/>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="161"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="87"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="161"/>
         <source>30 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="88"/>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="162"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="88"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="162"/>
         <source>45 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="89"/>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="163"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="89"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="163"/>
         <source>1 hour</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="90"/>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="164"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="90"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="164"/>
         <source>80 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="91"/>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="165"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="91"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="165"/>
         <source>90 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="92"/>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="166"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="92"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="166"/>
         <source>100 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="93"/>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="167"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="93"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="167"/>
         <source>2 hours</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="129"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="129"/>
         <source>Plugged In</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/AutomaticSuspendDialog.qml" line="129"/>
+        <location filename="../../src/settings/power/contents/AutomaticSuspendDialog.qml" line="129"/>
         <source>When idle</source>
         <translation type="unfinished"></translation>
     </message>
@@ -81,7 +81,7 @@
 <context>
     <name>BatteryListItem</name>
     <message>
-        <location filename="../contents/BatteryListItem.qml" line="34"/>
+        <location filename="../../src/settings/power/contents/BatteryListItem.qml" line="34"/>
         <source>%1%</source>
         <translation type="unfinished"></translation>
     </message>
@@ -89,159 +89,173 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../contents/main.qml" line="57"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="65"/>
         <source>Devices</source>
         <translation type="unfinished">Devices</translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="68"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="77"/>
         <source>Power Saving</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="71"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="81"/>
         <source>Screen brightness</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="83"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="93"/>
         <source>Keyboard brightness</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="95"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="105"/>
         <source>Dim screen when inactive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="105"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="115"/>
         <source>Blank screen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="111"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="121"/>
         <source>1 minute</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="112"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="122"/>
         <source>2 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="113"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="123"/>
         <source>3 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="114"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="124"/>
         <source>4 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="115"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="125"/>
         <source>5 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="116"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="126"/>
         <source>8 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="117"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="127"/>
         <source>10 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="118"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="128"/>
         <source>12 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="119"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="129"/>
         <source>15 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="120"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="130"/>
         <source>Never</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="153"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="163"/>
         <source>Wi-Fi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="154"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="164"/>
         <source>Turn off Wi-Fi to save power</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="163"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="173"/>
         <source>Bluetooth</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="164"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="174"/>
         <source>Turn off Bluetooth to save power</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="174"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="184"/>
         <source>Suspend &amp; Power Button</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="177"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="188"/>
         <source>Automatic suspend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="186"/>
-        <location filename="../contents/main.qml" line="192"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="197"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="203"/>
         <source>On</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="188"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="199"/>
         <source>When on battery power</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="190"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="201"/>
         <source>When plugged in</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="195"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="206"/>
         <source>Off</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="203"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="214"/>
         <source>When the Power Button is pressed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="208"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="219"/>
         <source>Ask</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="209"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="220"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="251"/>
         <source>Suspend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="210"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="221"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="252"/>
         <source>Hibernate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../contents/main.qml" line="211"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="222"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="253"/>
+        <source>Hybrid Sleep</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/settings/power/contents/main.qml" line="223"/>
+        <location filename="../../src/settings/power/contents/main.qml" line="254"/>
         <source>Nothing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/settings/power/contents/main.qml" line="246"/>
+        <source>When the lid is closed</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

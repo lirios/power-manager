@@ -2,7 +2,7 @@
 <context>
     <name>BatteryEntry</name>
     <message>
-        <location filename="../contents/BatteryEntry.qml" line="35"/>
+        <location filename="../../src/indicators/power/contents/BatteryEntry.qml" line="35"/>
         <source>%1%</source>
         <translation>%1%</translation>
     </message>
@@ -10,7 +10,7 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../contents/main.qml" line="31"/>
+        <location filename="../../src/indicators/power/contents/main.qml" line="31"/>
         <source>Power</source>
         <translation>Energia</translation>
     </message>

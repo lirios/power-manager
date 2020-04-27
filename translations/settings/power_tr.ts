@@ -89,172 +89,172 @@
     <message>
         <location filename="../contents/main.qml" line="65"/>
         <source>Devices</source>
-        <translation type="unfinished"/>
+        <translation>Aygıtlar</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="77"/>
         <source>Power Saving</source>
-        <translation type="unfinished"/>
+        <translation>Güç Tasarrufu</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="81"/>
         <source>Screen brightness</source>
-        <translation type="unfinished"/>
+        <translation>Ekran parlaklığı</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="93"/>
         <source>Keyboard brightness</source>
-        <translation type="unfinished"/>
+        <translation>Klavye parlaklığı</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="105"/>
         <source>Dim screen when inactive</source>
-        <translation type="unfinished"/>
+        <translation>Aktif değilken ekranı kıs</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="115"/>
         <source>Blank screen</source>
-        <translation type="unfinished"/>
+        <translation>Boş ekran</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="121"/>
         <source>1 minute</source>
-        <translation type="unfinished"/>
+        <translation>1 dakika</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="122"/>
         <source>2 minutes</source>
-        <translation type="unfinished"/>
+        <translation>2 dakika</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="123"/>
         <source>3 minutes</source>
-        <translation type="unfinished"/>
+        <translation>3 dakika</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="124"/>
         <source>4 minutes</source>
-        <translation type="unfinished"/>
+        <translation>4 dakika</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="125"/>
         <source>5 minutes</source>
-        <translation type="unfinished"/>
+        <translation>5 dakika</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="126"/>
         <source>8 minutes</source>
-        <translation type="unfinished"/>
+        <translation>8 dakika</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="127"/>
         <source>10 minutes</source>
-        <translation type="unfinished"/>
+        <translation>10 dakika</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="128"/>
         <source>12 minutes</source>
-        <translation type="unfinished"/>
+        <translation>12 dakika</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="129"/>
         <source>15 minutes</source>
-        <translation type="unfinished"/>
+        <translation>15 dakika</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="130"/>
         <source>Never</source>
-        <translation type="unfinished"/>
+        <translation>Asla</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="163"/>
         <source>Wi-Fi</source>
-        <translation type="unfinished"/>
+        <translation>Wi-Fi</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="164"/>
         <source>Turn off Wi-Fi to save power</source>
-        <translation type="unfinished"/>
+        <translation>Güç tasarrufu için Wi-Fi&apos;yi kapat</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="173"/>
         <source>Bluetooth</source>
-        <translation type="unfinished"/>
+        <translation>Bluetooth</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="174"/>
         <source>Turn off Bluetooth to save power</source>
-        <translation type="unfinished"/>
+        <translation>Güç tasarrufu için Bluetooth&apos;u kapat</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="184"/>
         <source>Suspend &amp; Power Button</source>
-        <translation type="unfinished"/>
+        <translation>Askıya Al ve Güç Düğmesi</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="188"/>
         <source>Automatic suspend</source>
-        <translation type="unfinished"/>
+        <translation>Kendiliğinden askıya al</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="197"/>
         <location filename="../contents/main.qml" line="203"/>
         <source>On</source>
-        <translation type="unfinished"/>
+        <translation>Açık</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="199"/>
         <source>When on battery power</source>
-        <translation type="unfinished"/>
+        <translation>Pil gücündeyken</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="201"/>
         <source>When plugged in</source>
-        <translation type="unfinished"/>
+        <translation>Prizdeyken</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="206"/>
         <source>Off</source>
-        <translation type="unfinished"/>
+        <translation>Kapalı</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="214"/>
         <source>When the Power Button is pressed</source>
-        <translation type="unfinished"/>
+        <translation>Güç Düğmesine basıldığında</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="219"/>
         <source>Ask</source>
-        <translation type="unfinished"/>
+        <translation>Sor</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="220"/>
         <location filename="../contents/main.qml" line="251"/>
         <source>Suspend</source>
-        <translation type="unfinished"/>
+        <translation>Askıya Al</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="221"/>
         <location filename="../contents/main.qml" line="252"/>
         <source>Hibernate</source>
-        <translation type="unfinished"/>
+        <translation>Derin Uyku</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="222"/>
         <location filename="../contents/main.qml" line="253"/>
         <source>Hybrid Sleep</source>
-        <translation type="unfinished"/>
+        <translation>Hibrit Uyku</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="223"/>
         <location filename="../contents/main.qml" line="254"/>
         <source>Nothing</source>
-        <translation type="unfinished"/>
+        <translation>Hiçbir Şey</translation>
     </message>
     <message>
         <location filename="../contents/main.qml" line="246"/>
         <source>When the lid is closed</source>
-        <translation type="unfinished"/>
+        <translation>Kapak kapatıldığında</translation>
     </message>
 </context>
 </TS>
