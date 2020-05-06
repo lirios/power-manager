@@ -243,7 +243,7 @@
         <location filename="../../src/settings/power/contents/main.qml" line="222"/>
         <location filename="../../src/settings/power/contents/main.qml" line="253"/>
         <source>Hybrid Sleep</source>
-        <translation type="unfinished"/>
+        <translation>Suspender híbrido</translation>
     </message>
     <message>
         <location filename="../../src/settings/power/contents/main.qml" line="223"/>
@@ -254,7 +254,7 @@
     <message>
         <location filename="../../src/settings/power/contents/main.qml" line="246"/>
         <source>When the lid is closed</source>
-        <translation type="unfinished"/>
+        <translation>Quando a tampa for fechada</translation>
     </message>
 </context>
 </TS>
