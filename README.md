@@ -3,8 +3,8 @@ Power Manager
 
 [![License](https://img.shields.io/badge/license-GPLv3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 [![GitHub release](https://img.shields.io/github/release/lirios/power-manager.svg)](https://github.com/lirios/power-manager)
-[![CI](https://github.com/lirios/power-manager/workflows/CI/badge.svg?branch=develop)](https://github.com/lirios/power-manager/actions?query=workflow%3ACI)
 [![GitHub issues](https://img.shields.io/github/issues/lirios/power-manager.svg)](https://github.com/lirios/power-manager/issues)
+[![CI](https://github.com/lirios/power-manager/workflows/CI/badge.svg?branch=develop)](https://github.com/lirios/power-manager/actions?query=workflow%3ACI)
 
 Power management support for Liri.
 
