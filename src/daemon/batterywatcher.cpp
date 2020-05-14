@@ -269,7 +269,7 @@ void BatteryWatcher::batteryChanged()
 #if SOLID_VERSION >= QT_VERSION_CHECK(5, 45, 0)
             case Solid::Battery::GamingInputBattery:
                 //: Gaming input battery level is low
-                notification->setSummary(tr("Gaming input low"));
+                notification->setSummary(tr("Gaming input battery low"));
                 //: Tell users how much power is left (percentage)
                 notification->setBody(tr("Gaming input is low in power (%1%)").arg(battery->chargePercent()));
                 break;
