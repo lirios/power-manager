@@ -1,9 +1,8 @@
 [Desktop Entry]
 Type=Service
-Name=Power
-Comment=Battery status
-Keywords=Power;Battery;Brightness;
-#TRANSLATIONS
+_Name=Power
+_Comment=Battery status
+_Keywords=Power;Battery;Brightness;
 Icon=preferences-system-power-management
 OnlyShowIn=X-Liri;
 X-Liri-ServiceType=Indicator

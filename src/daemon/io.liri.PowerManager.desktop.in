@@ -1,8 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Power Manager
-Comment=Power Manager
-#TRANSLATIONS
+_Name=Power Manager
+_Comment=Power Manager
 Exec=liri-power-manager
 TryExec=liri-power-manager
 Terminal=false

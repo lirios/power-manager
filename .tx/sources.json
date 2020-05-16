@@ -7,8 +7,9 @@
   {
     "type": "desktop",
     "source_file": "src/daemon/io.liri.PowerManager.desktop.in",
-    "file_filter": "translations/daemon/io.liri.PowerManager_<lang>.desktop",
-    "output_path": "src/daemon/io.liri.PowerManager.desktop"
+    "dest_file": "src/daemon/io.liri.PowerManager.desktop",
+    "file_filter": "translations/daemon/desktop_<lang>.po",
+    "output_path": "translations/daemon/desktop.pot"
   },
   {
     "type": "ts",
@@ -18,8 +19,9 @@
   {
     "type": "desktop",
     "source_file": "src/indicators/power/metadata.desktop.in",
-    "file_filter": "translations/indicator/metadata_<lang>.desktop",
-    "output_path": "src/indicators/power/metadata.desktop"
+    "dest_file": "src/indicators/power/metadata.desktop",
+    "file_filter": "translations/indicator/metadata_<lang>.po",
+    "output_path": "translations/indicator/metadata.pot"
   },
   {
     "type": "ts",
@@ -29,7 +31,8 @@
   {
     "type": "desktop",
     "source_file": "src/settings/power/metadata.desktop.in",
-    "file_filter": "translations/settings/metadata_<lang>.desktop",
-    "output_path": "src/settings/power/metadata.desktop"
+    "dest_file": "src/settings/power/metadata.desktop",
+    "file_filter": "translations/settings/metadata_<lang>.po",
+    "output_path": "translations/settings/metadata.pot"
   }
 ]
