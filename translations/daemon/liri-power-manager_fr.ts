@@ -166,8 +166,11 @@ Monitor battery level is low</extracomment>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="189"/>
+        <location filename="../../src/daemon/batterywatcher.cpp" line="272"/>
         <source>Gaming input battery low</source>
-        <extracomment>Gaming input battery level is critically low</extracomment>
+        <extracomment>Gaming input battery level is critically low
+----------
+Gaming input battery level is low</extracomment>
         <translation>Batterie du dispositif de jeu faible.</translation>
     </message>
     <message>
@@ -247,12 +250,6 @@ Monitor battery level is low</extracomment>
         <source>Monitor is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
         <translation>Batterie du moniteur faible (%1%)</translation>
-    </message>
-    <message>
-        <location filename="../../src/daemon/batterywatcher.cpp" line="272"/>
-        <source>Gaming input low</source>
-        <extracomment>Gaming input battery level is low</extracomment>
-        <translation>Batterie du dispositif de jeu faible</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="274"/>

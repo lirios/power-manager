@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt_BR" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.1">
 <context>
     <name>BatteryWatcher</name>
     <message>
@@ -6,43 +6,43 @@
         <location filename="../../src/daemon/batterywatcher.cpp" line="111"/>
         <source>Power</source>
         <extracomment>Low battery notification application name</extracomment>
-        <translation>Energia</translation>
+        <translation>Alimentazione</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="86"/>
         <source>UPS Discharging</source>
         <extracomment>UPS discharging notification summary</extracomment>
-        <translation>No-break descarregando</translation>
+        <translation>Gruppo di continuità in scaricamento</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="92"/>
         <source>%1 of UPS backup power remaining (%2%)</source>
         <extracomment>UPS discharging notification body</extracomment>
-        <translation>%1 de energia restante no no-break (%2%)</translation>
+        <translation>%1 restanti di carica di emergenza dell&apos;UPS (%2%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="95"/>
         <source>Unkown amount of UPS backup power remaining</source>
         <extracomment>UPS discharging notification body</extracomment>
-        <translation>Quantidade de energia restante desconhecida no no-break</translation>
+        <translation>Percentuale di carica residua dell&apos;UPS sconosciuta</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="120"/>
         <source>Laptop battery critically low</source>
         <extracomment>Laptop battery critically low, and we have more than one battery of that kind</extracomment>
-        <translation>Bateria do laptop criticamente baixa</translation>
+        <translation>Batteria interna scarica a livello critico</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="123"/>
         <source>Battery critically low</source>
         <extracomment>Laptop battery critically low, and we have only one of that kind</extracomment>
-        <translation>Bateria criticamente baixa</translation>
+        <translation>Batteria scarica a livello critico</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="128"/>
         <source>The system will shutdown very soon unless it is plugged in</source>
         <extracomment>Tell users what will happen if the computer won't be charged soon enough</extracomment>
-        <translation>O sistema será desligado em breve, a não ser que seja conectado à tomada</translation>
+        <translation>Il sistema si spegnerà a breve se non è collegato all&apos;alimentazione</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="132"/>
@@ -51,13 +51,13 @@
         <extracomment>UPS battery level is critically low
 ----------
 UPS battery level is low</extracomment>
-        <translation>Bateria do no-break baixa</translation>
+        <translation>UPS scarico</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="134"/>
         <source>Approximately %1% of remaining UPS backup power. Restore AC power to your system to avoid losing data.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Aproximadamente %1% de energia restante no no-break. Restaure a energia CA em seu sistema para evitar a perda de dados.</translation>
+        <translation>Circa %1% di carica dell&apos;UPS rimanente. Ripristinare l&apos;alimentazione da rete per evitare perdite di dati.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="139"/>
@@ -66,13 +66,13 @@ UPS battery level is low</extracomment>
         <extracomment>PDA battery level is critically low
 ----------
 PDA battery level is low</extracomment>
-        <translation>Bateria do PDA baixa</translation>
+        <translation>Batteria PDA scarica</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="141"/>
         <source>PDA is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>O PDA está com pouca energia (%1%). Este dispositivo irá parar de funcionar logo se não for recarregado.</translation>
+        <translation>Il PDA ha una carica residua bassa (%1%). Il dispositivo smetterà presto di funzionare se non è ricaricato.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="146"/>
@@ -81,13 +81,13 @@ PDA battery level is low</extracomment>
         <extracomment>Mouse battery level is critically low
 ----------
 Mouse battery level is low</extracomment>
-        <translation>Bateria do mouse baixa</translation>
+        <translation>Batteria del mouse scarica</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="148"/>
         <source>Wireless mouse is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>O mouse sem fio está com a bateria muito fraca (%1%). Este dispositivo logo não funcionará se não for carregado.</translation>
+        <translation>Il mouse wireless ha una carica residua bassa (%1%). Il dispositivo smetterà presto di funzionare se non è ricaricato.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="153"/>
@@ -96,13 +96,13 @@ Mouse battery level is low</extracomment>
         <extracomment>Keyboard battery level is critically low
 ----------
 Keyboard battery level is low</extracomment>
-        <translation>Bateria do teclado baixa</translation>
+        <translation>Batteria della tastiera scarica</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="155"/>
         <source>Wireless keyboard is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Bateria do teclado sem fio está muito baixa(%1%). O dispositivo logo irá parar de funcionar se não for carregado.</translation>
+        <translation>La tastiera wireless ha una carica residua bassa (%1%). Il dispositivo smetterà presto di funzionare se non è ricaricato.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="160"/>
@@ -111,13 +111,13 @@ Keyboard battery level is low</extracomment>
         <extracomment>Combined keyboard/mouse battery level is critically low
 ----------
 Combined keyboard/mouse battery level is low</extracomment>
-        <translation>Bateria do teclado e mouse combinado baixa</translation>
+        <translation>Batteria della tastiera con mouse integrato scarica</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="162"/>
         <source>Wireless combined keyboard and mouse is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>O teclado e mouse combinado sem fio está com muito pouca energia (%1%). Este dispositivo irá parar de funcionar logo se não for recarregado.</translation>
+        <translation>La tastiera con mouse integrato ha una carica residua bassa (%1%). Il dispositivo smetterà presto di funzionare se non è ricaricato.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="167"/>
@@ -126,13 +126,13 @@ Combined keyboard/mouse battery level is low</extracomment>
         <extracomment>Camera battery level is critically low
 ----------
 Camera battery level is low</extracomment>
-        <translation>Bateria da câmera baixa</translation>
+        <translation>Batteria della fotocamea scarica</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="169"/>
         <source>Camera is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>A câmera está com muito pouca energia (%1%). Este dispositivo irá parar de funcionar logo se não for recarregado.</translation>
+        <translation>La fotocamera ha una carica residua bassa (%1%). Il dispositivo smetterà presto di funzionare se non è ricaricato.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="174"/>
@@ -141,13 +141,13 @@ Camera battery level is low</extracomment>
         <extracomment>Phone battery level is critically low
 ----------
 Phone battery level is low</extracomment>
-        <translation>Bateria do celular baixa</translation>
+        <translation>Batteria del telefono scarica</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="176"/>
         <source>Cell phone is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>O telefone celular está com a bateria muito baixa (% 1%). Em breve, o dispositivo deixará de funcionar se não for carregado.</translation>
+        <translation>Il telefono ha una carica residua bassa (%1%). Il dispositivo smetterà presto di funzionare se non è ricaricato.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="181"/>
@@ -156,13 +156,13 @@ Phone battery level is low</extracomment>
         <extracomment>Monitor battery level is critically low
 ----------
 Monitor battery level is low</extracomment>
-        <translation>Bateria do monitor baixa</translation>
+        <translation>Batteria del monitor scarica</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="183"/>
         <source>Monitor is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Monitor está com pouca bateria (% 1%). Em breve, o dispositivo deixará de funcionar se não for cobrado.</translation>
+        <translation>Il monitor ha una carica residua bassa (%1%). Il dispositivo smetterà presto di funzionare se non è ricaricato.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="189"/>
@@ -171,91 +171,91 @@ Monitor battery level is low</extracomment>
         <extracomment>Gaming input battery level is critically low
 ----------
 Gaming input battery level is low</extracomment>
-        <translation>Bateria do controlador de jogo baixa</translation>
+        <translation>Batteria del controller scarica</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="191"/>
         <source>Gaming input is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>O controlador de jogo está com muito pouca energia (%1%). Este dispositivo irá parar de funcionar logo se não for recarregado.</translation>
+        <translation>Il controller ha una carica residua bassa (%1%). Il dispositivo smetterà presto di funzionare se non è ricaricato.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="205"/>
         <source>Laptop battery low</source>
         <extracomment>Laptop battery low, and we have more than one battery of that kind</extracomment>
-        <translation>Bateria do laptop baixa</translation>
+        <translation>Batteria del portatile scarica</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="208"/>
         <source>Battery low</source>
         <extracomment>Laptop battery low, and we have only one of that kind</extracomment>
-        <translation>Bateria baixa</translation>
+        <translation>Batteria scarica</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="215"/>
         <source>Approximately %1 remaining (%2%)</source>
         <extracomment>Tell users how much power is left (time and percentage)</extracomment>
-        <translation>Aproximadamente %1 restantes (%2%)</translation>
+        <translation>Circa %1 residuo (%2%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="218"/>
         <source>Battery low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Bateria com pouca energia (%1%)</translation>
+        <translation>Batteria scarica (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="225"/>
         <source>Approximately %1% of remaining UPS backup power</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Aproximadamente %1% de energia restante no no-break.</translation>
+        <translation>Circa %1% di carica dell&apos;UPS rimanente</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="231"/>
         <source>PDA is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>PDA com pouca energia (%1%)</translation>
+        <translation>Batteria del PDA scarica (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="237"/>
         <source>Wireless mouse is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Mouse sem fio com pouca energia (%1%)</translation>
+        <translation>Batteria del mouse scarica (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="243"/>
         <source>Wireless keyboard is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>A bateria do teclado sem fio está baixa (%1%)</translation>
+        <translation>Batteria della tastiera scarica (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="249"/>
         <source>Wireless combined keyboard and mouse is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Teclado e mouse combinados sem fio com pouca energia (%1%)</translation>
+        <translation>Batteria della tastiera con mouse integrato scarica (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="255"/>
         <source>Camera is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Câmera com pouca energia (%1%)</translation>
+        <translation>Fotocamera scarica (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="261"/>
         <source>Cell phone is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Celular com pouca energia (%1%)</translation>
+        <translation>Cellulare scarico (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="267"/>
         <source>Monitor is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Monitor com pouca energia (%1%)</translation>
+        <translation>Monitor scarico (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="274"/>
         <source>Gaming input is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Controlador de jogo com pouca energia (%1%)</translation>
+        <translation>Controller scarico (%1%)</translation>
     </message>
 </context>
 </TS>
