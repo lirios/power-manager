@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Luiz Fernando Ranghetti <elchevive68@gmail.com>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-17 09:44+0200\n"
+"POT-Creation-Date: 2020-05-19 00:16+0000\n"
 "PO-Revision-Date: 2020-05-17 07:44+0000\n"
+"Last-Translator: Luiz Fernando Ranghetti <elchevive68@gmail.com>, 2020\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/lirios/teams/71982/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,13 +25,15 @@ msgstr ""
 #: metadata.desktop.in:3
 msgctxt "Name entry"
 msgid "Power"
-msgstr ""
+msgstr "Energia"
 
 #. (desktop-to-pot) "Comment" entry
 #: metadata.desktop.in:4
 msgctxt "Comment entry"
 msgid "View your battery status and change power saving settings"
 msgstr ""
+"Veja o status de sua bateria e altere as configurações de economia de "
+"energia"
 
 #. (desktop-to-pot) "Keywords" entry
 #: metadata.desktop.in:5
@@ -35,3 +41,4 @@ msgctxt "Keywords entry"
 msgid ""
 "Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;"
 msgstr ""
+"Energia;Dormir;Suspender;Hibernar;Bateria;Brilho;Dim;Monitor;DPMS;Ocioso;"
