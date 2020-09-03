@@ -94,7 +94,7 @@
     <message>
         <location filename="../../src/settings/power/contents/main.qml" line="77"/>
         <source>Power Saving</source>
-        <translation type="unfinished"/>
+        <translation>Сохранение энергии</translation>
     </message>
     <message>
         <location filename="../../src/settings/power/contents/main.qml" line="81"/>
