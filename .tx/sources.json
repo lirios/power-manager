@@ -13,15 +13,15 @@
   },
   {
     "type": "ts",
-    "directory": "src/indicators/power/contents",
-    "output_path": "translations/indicator/power.ts"
+    "directory": "src/statusarea/power/contents",
+    "output_path": "translations/statusarea/power.ts"
   },
   {
     "type": "desktop",
-    "source_file": "src/indicators/power/metadata.desktop.in",
-    "dest_file": "src/indicators/power/metadata.desktop",
-    "file_filter": "translations/indicator/metadata_<lang>.po",
-    "output_path": "translations/indicator/metadata.pot"
+    "source_file": "src/statusarea/power/metadata.desktop.in",
+    "dest_file": "src/statusarea/power/metadata.desktop",
+    "file_filter": "translations/statusarea/metadata_<lang>.po",
+    "output_path": "translations/statusarea/metadata.pot"
   },
   {
     "type": "ts",

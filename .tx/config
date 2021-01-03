@@ -16,14 +16,14 @@ file_filter = translations/daemon/desktop_<lang>.po
 [liri-power-manager.indicator]
 type = QT
 source_lang = en
-source_file = translations/indicator/power.ts
-file_filter = translations/indicator/power_<lang>.ts
+source_file = translations/statusarea/power.ts
+file_filter = translations/statusarea/power_<lang>.ts
 
 [liri-power-manager.indicator-metadata]
 type = PO
 source_lang = en
-source_file = translations/indicator/metadata.pot
-file_filter = translations/indicator/metadata_<lang>.po
+source_file = translations/statusarea/metadata.pot
+file_filter = translations/statusarea/metadata_<lang>.po
 
 [liri-power-manager.settings-module]
 type = QT
