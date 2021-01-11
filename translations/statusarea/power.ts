@@ -4,7 +4,7 @@
 <context>
     <name>BatteryEntry</name>
     <message>
-        <location filename="../../src/indicators/power/contents/BatteryEntry.qml" line="35"/>
+        <location filename="../../src/statusarea/power/contents/BatteryEntry.qml" line="16"/>
         <source>%1%</source>
         <translation type="unfinished"></translation>
     </message>
@@ -12,7 +12,9 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../../src/indicators/power/contents/main.qml" line="31"/>
+        <location filename="../../src/statusarea/power/contents/main.qml" line="33"/>
+        <location filename="../../src/statusarea/power/contents/main.qml" line="58"/>
+        <location filename="../../src/statusarea/power/contents/main.qml" line="65"/>
         <source>Power</source>
         <translation type="unfinished"></translation>
     </message>
