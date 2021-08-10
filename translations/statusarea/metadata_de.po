@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-05-17 07:44+0000\n"
+"PO-Revision-Date: 2020-05-17 09:02+0000\n"
 "Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2021\n"
 "Language-Team: German (https://www.transifex.com/lirios/teams/71982/de/)\n"
 "MIME-Version: 1.0\n"
@@ -29,15 +29,11 @@ msgstr "Energie"
 #. (desktop-to-pot) "Comment" entry
 #: metadata.desktop.in:4
 msgctxt "Comment entry"
-msgid "View your battery status and change power saving settings"
-msgstr ""
-"Sehen Sie sich Ihren Batterie-/Akkustatus an und ändern Sie die "
-"Energiespareinstellungen"
+msgid "Battery status"
+msgstr "Batteriestatus"
 
 #. (desktop-to-pot) "Keywords" entry
 #: metadata.desktop.in:5
 msgctxt "Keywords entry"
-msgid ""
-"Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;"
-msgstr ""
-"Energie;Schlaf;Bereitschaftszustand;Ruhezustand;Batterie;Akku;Helligkeit;Dimmen;Leer;Monitor;DPMS;Leerlauf;"
+msgid "Power;Battery;Brightness;"
+msgstr "Energie;Batterie;Akku;Helligkeit;"

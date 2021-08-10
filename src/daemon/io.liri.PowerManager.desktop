@@ -2,6 +2,7 @@
 Type=Application
 Name=Power Manager
 Name[da]=Strømstyring
+Name[de]=Energieverwaltung
 Name[it]=Gestore alimentazione
 Name[lt]=Maitinimo tvarkytuvė
 Name[pt_BR]=Gerenciador de energia
@@ -9,6 +10,7 @@ Name[tr]=Güç Yönetici
 Name[zh_TW]=電源管理
 Comment=Power Manager
 Comment[da]=Strømstyring
+Comment[de]=Energieverwaltung
 Comment[it]=Gestore alimentazione
 Comment[lt]=Maitinimo tvarkytuvė
 Comment[pt_BR]=Gerenciador de energia
