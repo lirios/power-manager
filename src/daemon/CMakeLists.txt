@@ -55,3 +55,5 @@ liri_add_plugin(power
         Liri::Notifications
         KF5::Solid
 )
+
+liri_finalize_plugin(power)

@@ -24,3 +24,5 @@ liri_add_qml_plugin(power
         Liri::Core
         KF5::Solid
 )
+
+liri_finalize_qml_plugin(power)
