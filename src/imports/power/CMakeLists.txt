@@ -4,11 +4,13 @@ if(NOT TARGET Liri::Core)
     find_package(Liri1Core REQUIRED)
 endif()
 
-liri_add_qml_plugin(power
+liri_add_qml_plugin(PowerQmlPlugin
     MODULE_PATH
         "Liri/Power"
     VERSION
         "1.0"
+    OUTPUT_NAME
+        "powerplugin"
     SOURCES
         batteriesmodel.cpp
         batteriesmodel.h
@@ -25,4 +27,4 @@ liri_add_qml_plugin(power
         KF5::Solid
 )
 
-liri_finalize_qml_plugin(power)
+liri_finalize_qml_plugin(PowerQmlPlugin)
