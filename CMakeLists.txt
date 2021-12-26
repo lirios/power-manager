@@ -19,6 +19,12 @@ set(KF5_MIN_VERSION "5.48.0")
 ## Liri specific setup common for all modules:
 include(LiriSetup)
 
+## Only build on the appropriate platforms.
+if(NOT UNIX OR ANDROID)
+    message(NOTICE "Skipping the build as the condition \"UNIX OR ANDROID\" is not met.")
+    return()
+endif()
+
 ## Features:
 option(LIRI_ENABLE_SYSTEMD "Enable systemd support" ON)
 add_feature_info("Liri::Systemd" LIRI_ENABLE_SYSTEMD "Enable systemd support")
