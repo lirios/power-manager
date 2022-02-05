@@ -9,9 +9,6 @@ endif()
 if(NOT TARGET Liri::LocalDevice)
     find_package(Liri1LocalDevice REQUIRED)
 endif()
-if(NOT TARGET Liri::Logind)
-    find_package(Liri1Logind REQUIRED)
-endif()
 if(NOT TARGET Liri::Notifications)
     find_package(Liri1Notifications REQUIRED)
 endif()
@@ -51,7 +48,6 @@ liri_add_plugin(power
         Liri::Qt5GSettings
         Liri::Core
         Liri::LocalDevice
-        Liri::Logind
         Liri::Notifications
         KF5::Solid
 )

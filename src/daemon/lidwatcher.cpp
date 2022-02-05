@@ -22,7 +22,6 @@
  ***************************************************************************/
 
 #include <LiriLocalDevice/LocalDevice>
-#include <LiriLogind/Logind>
 
 #include "lidwatcher.h"
 
@@ -31,12 +30,6 @@ LidWatcher::LidWatcher(PowerManager *parent)
     , m_powerManager(parent)
     , m_localDevice(new Liri::LocalDevice(this))
 {
-    // We want to handle when the lid is closed, instead of letting systemd do it
-    Liri::Logind::instance()->inhibit(QStringLiteral("liri-power-manager"),
-                                      QStringLiteral("Liri wants to handle when the lid is closed"),
-                                      Liri::Logind::InhibitLidSwitch,
-                                      Liri::Logind::Block);
-
     // Perform an action when the lid is closed
     connect(m_localDevice, &Liri::LocalDevice::lidClosedChanged,
             this, &LidWatcher::handleLidClosed);
