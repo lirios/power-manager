@@ -24,7 +24,7 @@
 #include <Solid/Device>
 #include <Solid/DeviceNotifier>
 #include <Solid/Battery>
-#include <KF5/solid_version.h>
+// #include <KF5/solid_version.h>
 
 #include <LiriNotifications/Notification>
 
