@@ -12,37 +12,37 @@
         <location filename="../../src/daemon/batterywatcher.cpp" line="86"/>
         <source>UPS Discharging</source>
         <extracomment>UPS discharging notification summary</extracomment>
-        <translation>UPS ontlaad</translation>
+        <translation>Ontladen van UPS-accu</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="92"/>
         <source>%1 of UPS backup power remaining (%2%)</source>
         <extracomment>UPS discharging notification body</extracomment>
-        <translation>%1 van UPS back-up stroom over (%2%)</translation>
+        <translation>%1 van UPS-back-upstroom over (%2%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="95"/>
         <source>Unkown amount of UPS backup power remaining</source>
         <extracomment>UPS discharging notification body</extracomment>
-        <translation>Onbekende hoeveelheid UPS back-up stroom resterend </translation>
+        <translation>Onbekende hoeveelheid UPS-back-upstroom resterend </translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="120"/>
         <source>Laptop battery critically low</source>
         <extracomment>Laptop battery critically low, and we have more than one battery of that kind</extracomment>
-        <translation>Laptop batterij niveau is kritiek laag</translation>
+        <translation>Het accuniveau van de laptop is erg laag</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="123"/>
         <source>Battery critically low</source>
         <extracomment>Laptop battery critically low, and we have only one of that kind</extracomment>
-        <translation>Batterij niveau is kritiek laag</translation>
+        <translation>Het accuniveau van de laptop is laag</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="128"/>
         <source>The system will shutdown very soon unless it is plugged in</source>
         <extracomment>Tell users what will happen if the computer won't be charged soon enough</extracomment>
-        <translation>Het systeem sluit zodra af tenzij het aan stroom word gekoppeld</translation>
+        <translation>Als je geen netstroomadapter aankoppelt, dan wordt het systeem spoedig afgesloten</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="132"/>
@@ -51,7 +51,7 @@
         <extracomment>UPS battery level is critically low
 ----------
 UPS battery level is low</extracomment>
-        <translation>UPS batterij niveau is laag</translation>
+        <translation>Het UPS-accuniveau is laag</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="134"/>
