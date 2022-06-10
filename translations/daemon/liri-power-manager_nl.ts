@@ -57,7 +57,7 @@ UPS battery level is low</extracomment>
         <location filename="../../src/daemon/batterywatcher.cpp" line="134"/>
         <source>Approximately %1% of remaining UPS backup power. Restore AC power to your system to avoid losing data.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Ongeveer %1% UPS back-up stroom resterend. Sluit uw computer aan op stroom om dataverlies te voorkomen.</translation>
+        <translation>Ongeveer %1% UPS back-upstroom resterend. Sluit je computer aan op netstroom om gegevensverlies te voorkomen.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="139"/>
@@ -66,13 +66,13 @@ UPS battery level is low</extracomment>
         <extracomment>PDA battery level is critically low
 ----------
 PDA battery level is low</extracomment>
-        <translation>PDA batterij is bijna leeg</translation>
+        <translation>De PDA-accu is bijna leeg</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="141"/>
         <source>PDA is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Batterij van de PDA is bijna leeg (%1%). Het apparaat schakelt over enige momenten uit tenzij het word opgeladen.</translation>
+        <translation>De accu van de PDA is bijna leeg (%1%). Het apparaat schakelt over enige momenten uit, tenzij het wordt opgeladen.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="146"/>
@@ -81,13 +81,13 @@ PDA battery level is low</extracomment>
         <extracomment>Mouse battery level is critically low
 ----------
 Mouse battery level is low</extracomment>
-        <translation>Batterij van de muis is bijna leeg</translation>
+        <translation>Accu-/Batterijniveau van muis is laag</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="148"/>
         <source>Wireless mouse is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Batterij niveau van de draadloze muis is kritiek laag (%1%). Het apparaat schakelt over enige momenten uit tenzij het word opgeladen.</translation>
+        <translation>Het accu-/batterijniveau van de draadloze muis is zeer laag (%1%). Het apparaat schakelt over enige momenten uit, tenzij het wordt opgeladen.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="153"/>
@@ -96,13 +96,13 @@ Mouse battery level is low</extracomment>
         <extracomment>Keyboard battery level is critically low
 ----------
 Keyboard battery level is low</extracomment>
-        <translation>Batterij niveau van het toetsenbord is laag</translation>
+        <translation>Accu-/Batterijniveau van toetsenbord is laag</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="155"/>
         <source>Wireless keyboard is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Batterij niveau van de draadloze toetsenbord is kritiek laag (%1%). Het apparaat schakelt over enige momenten uit tenzij het word opgeladen.</translation>
+        <translation>Het accu-/batterijniveau van het draadloze toetsenbord is zeer laag (%1%). Het apparaat schakelt over enige momenten uit, tenzij het wordt opgeladen.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="160"/>
@@ -111,13 +111,13 @@ Keyboard battery level is low</extracomment>
         <extracomment>Combined keyboard/mouse battery level is critically low
 ----------
 Combined keyboard/mouse battery level is low</extracomment>
-        <translation>Batterij niveau van het gecombineerde toetsenbord en muis is laag</translation>
+        <translation>Accu-/Batterijniveau van muis- en toetsenbordcombinatie is laag</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="162"/>
         <source>Wireless combined keyboard and mouse is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Batterij niveau van het gecombineerde toetsenbord en muis is kritiek laag (%1%). Het apparaat schakelt over enige momenten uit tenzij het word opgeladen. </translation>
+        <translation>Het accu-/batterijniveau van de draadloze muis- en toetsenbordcombinatie is zeer laag (%1%). De apparaten schakelen over enige momenten uit, tenzij ze worden opgeladen.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="167"/>
