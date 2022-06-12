@@ -126,13 +126,13 @@ Combined keyboard/mouse battery level is low</extracomment>
         <extracomment>Camera battery level is critically low
 ----------
 Camera battery level is low</extracomment>
-        <translation>Batterij niveau van de camera is laag </translation>
+        <translation>Accuniveau van camera is laag </translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="169"/>
         <source>Camera is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Batterij niveau van de camera is kritiek laag (%1%). Het apparaat schakelt over enige momenten uit tenzij het word opgeladen. </translation>
+        <translation>Het accuniveau van de camera is zeer laag (%1%). Het apparaat schakelt over enige momenten, uit tenzij het wordt opgeladen. </translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="174"/>
@@ -141,13 +141,13 @@ Camera battery level is low</extracomment>
         <extracomment>Phone battery level is critically low
 ----------
 Phone battery level is low</extracomment>
-        <translation>Batterij niveau van de telefoon is laag </translation>
+        <translation>Accuniveau van telefoon is laag </translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="176"/>
         <source>Cell phone is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Batterij niveau van de telefoon is kritiek laag (%1%). Het apparaat schakelt over enige momenten uit tenzij het word opgeladen.</translation>
+        <translation>Het accuniveau van de telefoon is zeer laag (%1%). Het apparaat schakelt over enige momenten uit, tenzij het wordt opgeladen.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="181"/>
@@ -156,13 +156,13 @@ Phone battery level is low</extracomment>
         <extracomment>Monitor battery level is critically low
 ----------
 Monitor battery level is low</extracomment>
-        <translation>Batterij niveau van de monitor is laag </translation>
+        <translation>Accuniveau van beeldscherm is laag </translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="183"/>
         <source>Monitor is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Batterij niveau van de monitor is kritiek laag (%1%). Het apparaat schakelt over enige momenten uit tenzij het word opgeladen. </translation>
+        <translation>Het accuniveau van het beeldscherm is zeer laag (%1%). Het apparaat schakelt over enige momenten, uit tenzij het wordt opgeladen. </translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="189"/>
@@ -171,25 +171,25 @@ Monitor battery level is low</extracomment>
         <extracomment>Gaming input battery level is critically low
 ----------
 Gaming input battery level is low</extracomment>
-        <translation>Batterij niveau van het gaming input apparaat is laag </translation>
+        <translation>Accuniveau van gaming-invoerapparaat is laag </translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="191"/>
         <source>Gaming input is very low in power (%1%). This device will soon stop functioning if not charged.</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Batterij niveau van het gaming input apparaat is kritiek laag (%1%). Het apparaat schakelt over enige momenten uit tenzij het word opgeladen.</translation>
+        <translation>Het accuniveau van het gaming-invoerapparaat is zeer laag (%1%). Het apparaat schakelt over enige momenten uit, tenzij het wordt opgeladen.</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="205"/>
         <source>Laptop battery low</source>
         <extracomment>Laptop battery low, and we have more than one battery of that kind</extracomment>
-        <translation>Laptop batterij niveau is laag </translation>
+        <translation>Laptopaccuniveau is laag </translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="208"/>
         <source>Battery low</source>
         <extracomment>Laptop battery low, and we have only one of that kind</extracomment>
-        <translation>Het batterij niveau is laag</translation>
+        <translation>Het accuniveau is laag</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="215"/>
@@ -201,61 +201,61 @@ Gaming input battery level is low</extracomment>
         <location filename="../../src/daemon/batterywatcher.cpp" line="218"/>
         <source>Battery low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Batterij niveau is laag (%1%) </translation>
+        <translation>Accuniveau is laag (%1%) </translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="225"/>
         <source>Approximately %1% of remaining UPS backup power</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation>Ongeveer %1% UPS back-up stroom resterend</translation>
+        <translation>Ongeveer %1% UPS back-upstroom resterend</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="231"/>
         <source>PDA is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>PDA-accuniveau is laag (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="237"/>
         <source>Wireless mouse is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Accuniveau van draadloze muis is laag (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="243"/>
         <source>Wireless keyboard is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Accuniveau van draadloos toetsenbord is laag (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="249"/>
         <source>Wireless combined keyboard and mouse is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Accuniveau van draadloze muis- en toetsenbordcombinatie is laag (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="255"/>
         <source>Camera is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Camera-accuniveau is laag (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="261"/>
         <source>Cell phone is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Telefoonaccuniveau is laag (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="267"/>
         <source>Monitor is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Beeldschermaccuniveau is laag (%1%)</translation>
     </message>
     <message>
         <location filename="../../src/daemon/batterywatcher.cpp" line="274"/>
         <source>Gaming input is low in power (%1%)</source>
         <extracomment>Tell users how much power is left (percentage)</extracomment>
-        <translation type="unfinished"/>
+        <translation>Accuniveau van gaming-invoerapparaat is laag (%1%)</translation>
     </message>
 </context>
 </TS>
