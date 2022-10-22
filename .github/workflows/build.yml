@@ -20,4 +20,5 @@ jobs:
   linux-qt5:
     uses: lirios/.github/.github/workflows/build-linux-qt5.yml@master
     with:
+      dependencies: "solid-devel"
       build_dependencies: "cmake-shared qtgsettings libliri aurora-scanner aurora-compositor session"
