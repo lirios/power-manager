@@ -25,7 +25,7 @@
 
 #include <QObject>
 
-#include <Qt5GSettings/QGSettings>
+#include <Qt6GSettings/QGSettings>
 
 class PowerManager : public QObject
 {

@@ -26,6 +26,7 @@
 
 #include <QObject>
 #include <QUrl>
+#include <QQmlEngine>
 
 #include <Solid/Battery>
 #include <Solid/Device>
@@ -54,12 +55,12 @@ class Battery : public QObject
     Q_PROPERTY(double energyRate READ energyRate NOTIFY energyRateChanged)
     Q_PROPERTY(double voltage READ voltage NOTIFY voltageChanged)
     Q_PROPERTY(double temperature READ temperature NOTIFY temperatureChanged)
-    Q_PROPERTY(bool recalled READ isRecalled CONSTANT)
-    Q_PROPERTY(QString recallVendor READ recallVendor CONSTANT)
-    Q_PROPERTY(QUrl recallUrl READ recallUrl CONSTANT)
     Q_PROPERTY(QString vendor READ vendor CONSTANT)
     Q_PROPERTY(QString product READ product CONSTANT)
     Q_PROPERTY(QString serial READ serial CONSTANT)
+    QML_ELEMENT
+    QML_UNCREATABLE("Cannot create Battery object")
+    Q_MOC_INCLUDE("battery.h")
 public:
     enum Type {
         UnknownBattery,
@@ -116,10 +117,6 @@ public:
     double voltage() const;
 
     double temperature() const;
-
-    bool isRecalled() const;
-    QString recallVendor() const;
-    QUrl recallUrl() const;
 
     QString vendor() const;
     QString product() const;

@@ -25,6 +25,7 @@
 #define BATTERIESMODEL_H
 
 #include <QAbstractListModel>
+#include <QQmlEngine>
 
 class Battery;
 
@@ -33,6 +34,8 @@ class BatteriesModel : public QAbstractListModel
     Q_OBJECT
     Q_PROPERTY(Battery *primaryBattery READ primaryBattery NOTIFY primaryBatteryChanged)
     Q_PROPERTY(int count READ rowCount NOTIFY countChanged)
+    QML_ELEMENT
+    Q_MOC_INCLUDE("batteriesmodel.h")
 public:
     enum Roles {
         BatteryRole = Qt::UserRole + 1,
@@ -55,9 +58,6 @@ public:
         EnergyRateRole,
         VoltageRole,
         TemperatureRole,
-        IsRecalledRole,
-        RecallVendorRole,
-        RecallUrlRole,
         VendorRole,
         ProductRole,
         SerialRole
