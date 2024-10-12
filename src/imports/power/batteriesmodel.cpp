@@ -84,7 +84,7 @@ BatteriesModel::BatteriesModel(QObject *parent)
 
 Battery *BatteriesModel::primaryBattery() const
 {
-    for (auto battery : qAsConst(m_batteries)) {
+    for (auto battery : std::as_const(m_batteries)) {
         if (battery->type() == Battery::PrimaryBattery)
             return battery;
     }
@@ -115,9 +115,6 @@ QHash<int, QByteArray> BatteriesModel::roleNames() const
     roles.insert(EnergyRateRole, QByteArrayLiteral("energyRate"));
     roles.insert(VoltageRole, QByteArrayLiteral("voltage"));
     roles.insert(TemperatureRole, QByteArrayLiteral("temperature"));
-    roles.insert(IsRecalledRole, QByteArrayLiteral("isRecalled"));
-    roles.insert(RecallVendorRole, QByteArrayLiteral("recallVendor"));
-    roles.insert(RecallUrlRole, QByteArrayLiteral("recallUrl"));
     roles.insert(VendorRole, QByteArrayLiteral("vendor"));
     roles.insert(ProductRole, QByteArrayLiteral("product"));
     roles.insert(SerialRole, QByteArrayLiteral("serial"));
@@ -142,7 +139,7 @@ QVariant BatteriesModel::data(const QModelIndex &index, int role) const
 
     switch (role) {
     case BatteryRole:
-        return qVariantFromValue(battery);
+        return QVariant::fromValue(battery);
     case UdiRole:
         return battery->udi();
     case NameRole:
@@ -182,14 +179,8 @@ QVariant BatteriesModel::data(const QModelIndex &index, int role) const
         return battery->voltage();
     case TemperatureRole:
         return battery->temperature();
-    case IsRecalledRole:
-        return battery->isRecalled();
-    case RecallVendorRole:
-        return battery->recallVendor();
-    case RecallUrlRole:
-        return battery->recallUrl();
     case VendorRole:
-        return battery->recallVendor();
+        return battery->vendor();
     case ProductRole:
         return battery->product();
     case SerialRole:
@@ -198,3 +189,5 @@ QVariant BatteriesModel::data(const QModelIndex &index, int role) const
 
     return QVariant();
 }
+
+#include "moc_batteriesmodel.cpp"

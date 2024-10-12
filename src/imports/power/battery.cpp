@@ -132,21 +132,6 @@ double Battery::temperature() const
     return m_battery->temperature();
 }
 
-bool Battery::isRecalled() const
-{
-    return m_battery->isRecalled();
-}
-
-QString Battery::recallVendor() const
-{
-    return m_battery->recallVendor();
-}
-
-QUrl Battery::recallUrl() const
-{
-    return QUrl(m_battery->recallUrl());
-}
-
 QString Battery::vendor() const
 {
     return m_device.vendor();

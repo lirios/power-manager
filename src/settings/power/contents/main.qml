@@ -21,15 +21,14 @@
  * $END_LICENSE$
  ***************************************************************************/
 
-import QtQuick 2.1
-import QtQuick.Layouts 1.0
-import QtQuick.Controls 2.2
-import QtQuick.Controls.Material 2.2
-import Fluid.Controls 1.0 as FluidControls
-import Liri.Settings 1.0
-import Liri.Power 1.0
-import Liri.Device 1.0
-import QtGSettings 1.0
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls.Material
+import Fluid as Fluid
+import Liri.Settings
+import Liri.Power
+import Liri.Device
+import QtGSettings
 
 ModulePage {
     id: page
@@ -56,7 +55,7 @@ ModulePage {
         id: automaticSuspendDialog
     }
 
-    ScrollView {
+    Fluid.ScrollView {
         anchors.fill: parent
         clip: true
 
@@ -77,9 +76,9 @@ ModulePage {
                 title: qsTr("Power Saving")
                 width: page.width
 
-                FluidControls.ListItem {
+                Fluid.ListItem {
                     text: qsTr("Screen brightness")
-                    secondaryItem: Slider {
+                    secondaryItem: Fluid.Slider {
                         anchors.verticalCenter: parent.verticalCenter
                         width: parent.width
                         from: 0
@@ -89,9 +88,9 @@ ModulePage {
                     visible: false
                 }
 
-                FluidControls.ListItem {
+                Fluid.ListItem {
                     text: qsTr("Keyboard brightness")
-                    secondaryItem: Slider {
+                    secondaryItem: Fluid.Slider {
                         anchors.verticalCenter: parent.verticalCenter
                         width: parent.width
                         from: 0
@@ -101,9 +100,9 @@ ModulePage {
                     visible: false
                 }
 
-                FluidControls.ListItem {
+                Fluid.ListItem {
                     text: qsTr("Dim screen when inactive")
-                    rightItem: Switch {
+                    rightItem: Fluid.Switch {
                         anchors.centerIn: parent
                         checked: powerSettings.idleDim
                         onCheckedChanged: powerSettings.idleDim = checked
@@ -111,11 +110,11 @@ ModulePage {
                     visible: batteriesModel.count > 0
                 }
 
-                FluidControls.ListItem {
+                Fluid.ListItem {
                     text: qsTr("Blank screen")
-                    rightItem: ComboBox {
+                    rightItem: Fluid.ComboBox {
                         anchors.centerIn: parent
-                        width: FluidControls.Units.gu(6)
+                        width: Fluid.Units.gu(6)
                         textRole: "text"
                         model: ListModel {
                             ListElement { text: QT_TR_NOOP("1 minute"); value: 60 }
@@ -159,20 +158,20 @@ ModulePage {
                     }
                 }
 
-                FluidControls.ListItem {
+                Fluid.ListItem {
                     text: qsTr("Wi-Fi")
                     subText: qsTr("Turn off Wi-Fi to save power")
-                    rightItem: Switch {
+                    rightItem: Fluid.Switch {
                         anchors.centerIn: parent
                         checked: true
                     }
                     visible: false
                 }
 
-                FluidControls.ListItem {
+                Fluid.ListItem {
                     text: qsTr("Bluetooth")
                     subText: qsTr("Turn off Bluetooth to save power")
-                    rightItem: Switch {
+                    rightItem: Fluid.Switch {
                         anchors.centerIn: parent
                         checked: true
                     }
@@ -184,9 +183,9 @@ ModulePage {
                 title: qsTr("Suspend & Power Button")
                 width: page.width
 
-                FluidControls.ListItem {
+                Fluid.ListItem {
                     text: qsTr("Automatic suspend")
-                    rightItem: FluidControls.BodyLabel {
+                    rightItem: Fluid.BodyLabel {
                         anchors.centerIn: parent
                         text: {
                             var batteryOn = powerSettings.sleepInactiveBatteryType === "suspend";
@@ -210,9 +209,9 @@ ModulePage {
                     onClicked: automaticSuspendDialog.open()
                 }
 
-                FluidControls.ListItem {
+                Fluid.ListItem {
                     text: qsTr("When the Power Button is pressed")
-                    rightItem: ComboBox {
+                    rightItem: Fluid.ComboBox {
                         anchors.centerIn: parent
                         textRole: "text"
                         model: ListModel {
@@ -242,9 +241,9 @@ ModulePage {
                     }
                 }
 
-                FluidControls.ListItem {
+                Fluid.ListItem {
                     text: qsTr("When the lid is closed")
-                    rightItem: ComboBox {
+                    rightItem: Fluid.ComboBox {
                         anchors.centerIn: parent
                         textRole: "text"
                         model: ListModel {

@@ -21,19 +21,18 @@
  * $END_LICENSE$
  ***************************************************************************/
 
-import QtQuick 2.1
-import QtQuick.Layouts 1.0
-import QtQuick.Controls 2.0
-import Fluid.Controls 1.0
-import Liri.Power 1.0
+import QtQuick
+import QtQuick.Layouts
+import Fluid as Fluid
+import Liri.Power
 
-ListItem {
+Fluid.ListItem {
     property Battery battery
 
     text: battery.summary
     valueText: qsTr("%1%").arg(battery.chargePercent)
 
-    secondaryItem: ProgressBar {
+    secondaryItem: Fluid.ProgressBar {
         anchors {
             left: parent.left
             right: parent.right

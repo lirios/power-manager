@@ -46,16 +46,9 @@ void loadDaemonTranslations()
 #ifndef QT_NO_TRANSLATION
     QString locale = QLocale::system().name();
 
-    // Find the translations directory
-    const QString path = QLatin1String("liri-power-manager/translations");
-    const QString translationsDir =
-        QStandardPaths::locate(QStandardPaths::GenericDataLocation,
-                               path,
-                               QStandardPaths::LocateDirectory);
-
     // Load translations
     QTranslator *appTranslator = new QTranslator(QCoreApplication::instance());
-    if (appTranslator->load(QStringLiteral("%1/liri-power-manager_%2").arg(translationsDir, locale))) {
+    if (appTranslator->load(QStringLiteral(":/i18n/liri-power-manager_%1").arg(locale))) {
         QCoreApplication::installTranslator(appTranslator);
     } else if (locale == QLatin1String("C") ||
                 locale.startsWith(QLatin1String("en"))) {

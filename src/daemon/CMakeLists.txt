@@ -1,7 +1,5 @@
-find_package(KF5Solid "${KF5_MIN_VERSION}" REQUIRED)
-
-if(NOT TARGET Liri::Qt5GSettings)
-    find_package(Qt5GSettings REQUIRED)
+if(NOT TARGET Liri::Qt6GSettings)
+    find_package(Qt6GSettings REQUIRED)
 endif()
 if(NOT TARGET Liri::Core)
     find_package(Liri1Core REQUIRED)
@@ -16,40 +14,47 @@ if(NOT TARGET Liri::Daemon)
     find_package(Liri1Daemon REQUIRED)
 endif()
 
-# Translations
-file(GLOB LiriPowerManager_TRANSLATIONS "${CMAKE_CURRENT_SOURCE_DIR}/../../translations/daemon/*_*.ts")
-qt5_add_translation(LiriPowerManager_QM_FILES ${LiriPowerManager_TRANSLATIONS})
-install(FILES ${LiriPowerManager_QM_FILES}
-        DESTINATION "${INSTALL_DATADIR}/liri-power-manager/translations")
+qt_add_plugin(LiriDaemonPowerPlugin
+    CLASS_NAME PowerPlugin
+    MANUAL_FINALIZATION
+    batterywatcher.cpp batterywatcher.h
+    idlewatcher.cpp idlewatcher.h
+    lidwatcher.cpp lidwatcher.h
+    plugin.cpp plugin.h
+    powermanager.cpp powermanager.h
+    translation.cpp translation.h
+)
 
-liri_add_plugin(power
-    TYPE
-        liri/daemon
-    SOURCES
-        batterywatcher.cpp
-        batterywatcher.h
-        idlewatcher.cpp
-        idlewatcher.h
-        lidwatcher.cpp
-        lidwatcher.h
-        plugin.cpp
-        plugin.h
-        powermanager.cpp
-        powermanager.h
-        translation.cpp
-        translation.h
-        ${LiriPowerManager_QM_FILES}
-    DEFINES
+set_target_properties(LiriDaemonPowerPlugin PROPERTIES
+    OUTPUT_NAME power
+)
+
+target_compile_definitions(LiriDaemonPowerPlugin
+    PRIVATE
         QT_NO_CAST_FROM_ASCII
         QT_NO_FOREACH
-    LIBRARIES
-        Qt5::DBus
+)
+
+target_link_libraries(LiriDaemonPowerPlugin
+    PRIVATE
+        Qt6::Core
+        Qt6::DBus
         Liri::Daemon
-        Liri::Qt5GSettings
+        Liri::Qt6GSettings
         Liri::Core
         Liri::LocalDevice
         Liri::Notifications
-        KF5::Solid
+        KF6::Solid
 )
 
-liri_finalize_plugin(power)
+qt_finalize_target(LiriDaemonPowerPlugin)
+
+file(GLOB ts_files "${CMAKE_CURRENT_SOURCE_DIR}/../../translations/daemon/liri-power-manager_*.ts")
+qt_add_translations(LiriDaemonPowerPlugin
+    TS_FILES ${ts_files}
+)
+
+install(
+    TARGETS LiriDaemonPowerPlugin
+    DESTINATION ${KDE_INSTALL_PLUGINDIR}/liri/daemon
+)

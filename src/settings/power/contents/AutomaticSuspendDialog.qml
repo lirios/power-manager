@@ -21,12 +21,11 @@
  * $END_LICENSE$
  ***************************************************************************/
 
-import QtQuick 2.1
-import QtQuick.Layouts 1.0
-import QtQuick.Controls 2.1
-import Fluid.Controls 1.0 as FluidControls
+import QtQuick
+import QtQuick.Layouts
+import Fluid as Fluid
 
-Dialog {
+Fluid.Dialog {
     readonly property bool __hasBatteries: batteriesModel.count > 0
 
     parent: window.contentItem
@@ -44,13 +43,13 @@ Dialog {
 
         // Row 1
 
-        Label {
+        Fluid.Label {
             id: batteryLabel
             text: qsTr("On Battery Power")
             visible: __hasBatteries
         }
 
-        Switch {
+        Fluid.Switch {
             id: batterySwitch
             checked: powerSettings.sleepInactiveBatteryType !== "nothing"
             visible: __hasBatteries
@@ -70,7 +69,7 @@ Dialog {
             Layout.minimumWidth: batteryLabel.width + FluidControls.Units.gu(2)
         }
 
-        Label {
+        Fluid.Label {
             enabled: batterySwitch.checked
             text: qsTr("Delay")
             visible: __hasBatteries
@@ -78,7 +77,7 @@ Dialog {
             Layout.alignment: Qt.AlignRight
         }
 
-        ComboBox {
+        Fluid.ComboBox {
             textRole: "text"
             enabled: batterySwitch.checked
             visible: __hasBatteries
@@ -124,12 +123,12 @@ Dialog {
 
         // Row 3
 
-        Label {
+        Fluid.Label {
             id: acLabel
             text: __hasBatteries ? qsTr("Plugged In") : qsTr("When idle")
         }
 
-        Switch {
+        Fluid.Switch {
             id: acSwitch
             checked: powerSettings.sleepInactiveAcType !== "nothing"
             onCheckedChanged: {
@@ -146,14 +145,14 @@ Dialog {
             Layout.minimumWidth: acLabel.width + FluidControls.Units.gu(2)
         }
 
-        Label {
+        Fluid.Label {
             enabled: acSwitch.checked
             text: qsTr("Delay")
 
             Layout.alignment: Qt.AlignRight
         }
 
-        ComboBox {
+        Fluid.ComboBox {
             textRole: "text"
             enabled: acSwitch.checked
             model: ListModel {
